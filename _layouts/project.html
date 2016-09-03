@@ -16,37 +16,40 @@
 {% endfor %}
 
 <body>
-    <div class="head">
-        <h1 style="width: 700px;margin: auto;">{{ page.title }}</h1>
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="head">
+            <h1 style="width: 90%;max-width: 900px;margin: auto;">{{ page.title }}</h1>
 
-        <nav>
-            <ul>
-                <li><a href="\">home</a> > <a href="{{ project.url }}">{{ project.title }}</a></li>
-                <br />
-                {% for c in site.pages %}
+            <nav>
+                <ul>
+                    <li><a href="\">home</a> > <a href="{{ project.url }}">{{ project.title }}</a></li>
+                    <br />
+                    {% for c in site.pages %}
                     {% if c.project == page.project %}
-                        {% unless c.categories contains "project" %}
-                            <li><a href="{{ c.url }}">{{ c.title }}</a></li>
-                        {% endunless %}
+                    {% unless c.categories contains "project" %}
+                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                    {% endunless %}
                     {% endif %}
-                {% endfor %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="card">
+
+            {{ content }}
+
+        </div>
+        <footer>
+            <hr/>
+            <ul>
+                <li><a href="https://www.facebook.com/groups/680277955393461">facebook</a></li>
+                <li><a href="https://drive.google.com/folderview?id=0BwqA-2Wy1dAldHFiZDM1aDFMZWs&usp=sharing">google drive</a></li>
+                <li><a href="mailto:preproductioncollaborativeutd@gmail.com">email</a></li>
+                <li><a href="feed.xml">feed</a></li>
             </ul>
-        </nav>
+        </footer>
     </div>
-    <div class="card">
-
-        {{ content }}
-
-    </div>
-    <footer>
-        <hr/>
-        <ul>
-            <li><a href="https://www.facebook.com/groups/680277955393461">facebook</a></li>
-            <li><a href="https://drive.google.com/folderview?id=0BwqA-2Wy1dAldHFiZDM1aDFMZWs&usp=sharing">google drive</a></li>
-            <li><a href="mailto:preproductioncollaborativeutd@gmail.com">email</a></li>
-            <li><a href="feed.xml">feed</a></li>
-        </ul>
-    </footer>
 </body>
 
 </html>
