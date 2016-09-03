@@ -21,7 +21,8 @@ projects: [S16]
 {% endif %}
 {% endfor %}
 <div class="tooltip">
-Creative Lead: {{ page.creative_lead }}
+Creative Lead:<br />
+{{ page.creative_lead }}
 </div>
 </div>
 </div>
@@ -29,5 +30,5 @@ Creative Lead: {{ page.creative_lead }}
 {% endfor %}
 {% endfor %}
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script src="/js/project.js" type="text/javascript"></script>
