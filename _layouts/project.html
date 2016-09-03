@@ -40,19 +40,27 @@
         </div>
 
         {% if page.cards %}
-        {% for c in site.cite %}
-        {% if c.page contains 'index' %}
-        {% if page.cards contains c.title %}
-        <div class="card">
-        {{ c.content }}
-        </div>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+            {% for card in page.cards %}
+                {% for c in site.cite %}
+                    {% if c.page contains 'index' %}
+                        {% if card == c.title %}
+                            <div class="cite">
+                                <div class="card">
+                                    {{ c.content }}
+                                    <div class="tooltip">
+                                        {{ c.title }} by {{ c.author }}<br />
+                                        <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
         {% else %}
-        <div class="card">
-        {{ content }}
-        </div>
+            <div class="card">
+                {{ content }}
+            </div>
         {% endif %}
 
         <footer>
@@ -65,6 +73,9 @@
             </ul>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="/js/project.js" type="text/javascript"></script>
 </body>
 
 </html>
