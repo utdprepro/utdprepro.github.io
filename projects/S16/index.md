@@ -1,7 +1,15 @@
 ---
 layout: project
 categories: [project, S16]
+cards: [Summary, Game Concept]
 project: S16
-title: TBD
+title: Ennea
+excerpt: Summary
 ---
-We have not decided on this project here, but I made this page to test/show-off how the project pages will look like!
+{% for c in site.cite %}
+{% if c.categories contains 'index' %}
+{% if page.cards contains c.title %}
+{{ c.content }}
+{% endif %}
+{% endif %}
+{% endfor %}

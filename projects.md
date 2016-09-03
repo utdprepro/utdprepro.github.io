@@ -1,11 +1,25 @@
 ---
 layout: default
+nocard: true
 title: Projects
+projects: [S16]
 ---
-{% for page in site.pages %}
-{% if page.categories contains 'project' %}
-## [{{ page.title }}]({{ page.url }})
+{% for project in page.projects %}
+{% for page in site.projects %}
+{% if page.project == project %}
+<div class="card" markdown="1">
+## [{{ page.project }}: {{ page.title }}]({{ page.url }})
 
-{{ page.content | split:"\n\n" | first }}
+{% for c in site.cite %}
+{% if c.page == 'index' %}
+{% if c.project == page.project %}
+{% if page.excerpt == c.title %}
+{{ c.content }}
 {% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
+{% endif  %}
+{% endfor %}
 {% endfor %}

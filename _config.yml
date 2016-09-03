@@ -3,3 +3,10 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title/
+collections:
+    cite:
+        output: true
+        permalink: /projects/:path/
+    projects:
+        output: true
+        permalink: /projects/:title/

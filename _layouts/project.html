@@ -9,8 +9,8 @@
     <meta charset="utf-8">
 </head>
 
-{% for c in site.pages %}
-    {% if c.categories contains page.project %}
+{% for c in site.projects %}
+    {% if c.project == page.project %}
         {% assign project = c %}
     {% endif %}
 {% endfor %}
@@ -23,8 +23,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="\">home</a> > <a href="{{ project.url }}">{{ project.title }}</a></li>
+                    <li><a href="\">home</a></li>
+                    <li><a href="\about">about</a></li>
+                    <li><a href="\projects">projects</a></li>
                     <br />
+                    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
                     {% for c in site.pages %}
                     {% if c.project == page.project %}
                     {% unless c.categories contains "project" %}
@@ -35,11 +38,23 @@
                 </ul>
             </nav>
         </div>
+
+        {% if page.cards %}
+        {% for c in site.cite %}
+        {% if c.page contains 'index' %}
+        {% if page.cards contains c.title %}
         <div class="card">
-
-            {{ content }}
-
+        {{ c.content }}
         </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <div class="card">
+        {{ content }}
+        </div>
+        {% endif %}
+
         <footer>
             <hr/>
             <ul>
