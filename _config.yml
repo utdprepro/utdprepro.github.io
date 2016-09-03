@@ -1,0 +1,5 @@
+name: PrePro Collaborative
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:title/

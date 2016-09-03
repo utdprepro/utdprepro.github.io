@@ -1,0 +1,40 @@
+nav {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    color: #999;
+}
+
+nav ul, footer ul {
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+nav ul li, footer ul li {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 8px;
+    padding-left: 8px;
+    white-space: nowrap;
+}
+
+footer {
+    font-size: .8em;
+    border-top: 2px solid #000;
+}
+
+a, a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: #2980b9;
+}
+
+h1 {
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
