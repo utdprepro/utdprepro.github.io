@@ -19,8 +19,6 @@
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div class="head">
-            <h1 style="width: 90%;max-width: 900px;margin: auto;">{{ page.title }}</h1>
-
             <nav>
                 <ul>
                     <li><a href="\">home</a></li>
@@ -28,19 +26,26 @@
                     <li><a href="\projects">projects</a></li>
                     <br />
                     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+                    {% for tab in project.tabs %}
                     {% for c in site.pages %}
                     {% if c.project == page.project %}
                     {% unless c.categories contains "project" %}
+                    {% if c.page == "project" %}
+                    {% if c.title == tab %}
                     <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                    {% endif %}
+                    {% endif %}
                     {% endunless %}
                     {% endif %}
                     {% endfor %}
+                    {% endfor %}
                 </ul>
             </nav>
+            <h1>{{ page.title }}</h1>
         </div>
 
         <div class="card">
-        {{ content }}
+            {{ content }}
         </div>
 
         <div class="card">

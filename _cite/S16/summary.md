@@ -1,6 +1,6 @@
 ---
 layout: cite
-page: index
+page: Ennea
 project: S16
 title: Summary
 author: Denzel Beunafe

@@ -11,15 +11,7 @@ projects: [S16]
 <div class="card" markdown="1">
 ## [{{ page.project }}: {{ page.title }}]({{ page.url }})
 
-{% for c in site.cite %}
-{% if c.page == 'index' %}
-{% if c.project == page.project %}
-{% if page.excerpt == c.title %}
-{{ c.content }}
-{% endif %}
-{% endif %}
-{% endif %}
-{% endfor %}
+{{ page.content }}
 <div class="tooltip">
 Creative Lead:<br />
 {{ page.creative_lead }}

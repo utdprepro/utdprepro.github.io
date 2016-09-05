@@ -19,8 +19,6 @@
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div class="head">
-            <h1 style="width: 90%;max-width: 900px;margin: auto;">{{ page.title }}</h1>
-
             <nav>
                 <ul>
                     <li><a href="\">home</a></li>
@@ -28,25 +26,35 @@
                     <li><a href="\projects">projects</a></li>
                     <br />
                     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+                    {% for tab in project.tabs %}
                     {% for c in site.pages %}
                     {% if c.project == page.project %}
                     {% unless c.categories contains "project" %}
+                    {% if c.page == "project" %}
+                    {% if c.title == tab %}
                     <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                    {% endif %}
+                    {% endif %}
                     {% endunless %}
                     {% endif %}
                     {% endfor %}
+                    {% endfor %}
                 </ul>
             </nav>
+            <h1>{{ page.title }}</h1>
         </div>
 
         {% if page.cards %}
             {% for card in page.cards %}
+                {% assign found = false %}
                 {% for c in site.cite %}
-                    {% if c.page contains 'index' %}
+                    {% if c.page == page.title %}
                         {% if card == c.title %}
+                            {% assign found = true %}
                             <div class="cite">
                                 <div class="card">
-                                    {{ c.content }}
+                                    <h2>{{ c.title }}</h2>
+                                    {{ c.content | markdownify }}
                                     <div class="tooltip">
                                         {{ c.title }} by {{ c.author }}<br />
                                         <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
@@ -56,11 +64,25 @@
                         {% endif %}
                     {% endif %}
                 {% endfor %}
+                {% unless found %}
+                    {% for c in site.pages %}
+                        {% if c.page == page.title %}
+                            {% if card == c.title %}
+                                <div class="card">
+                                    <h2><a href="{{ c.url }}">{{ c.title }}</a></h2>
+                                    {{ c.content | markdownify }}
+                                    <div class="tooltip">
+                                        {{ c.title }} by {{ c.author }}<br />
+                                        <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endunless %}
             {% endfor %}
         {% else %}
-            <div class="card">
-                {{ content }}
-            </div>
+            {{ content }}
         {% endif %}
 
         <footer>
