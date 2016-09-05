@@ -24,19 +24,13 @@
                     <li><a href="\">home</a></li>
                     <li><a href="\about">about</a></li>
                     <li><a href="\projects">projects</a></li>
+                    <li><a href="\contributors">contributors</a></li>
                     <br />
                     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
                     {% for tab in project.tabs %}
-                    {% for c in site.pages %}
-                    {% if c.project == page.project %}
-                    {% unless c.categories contains "project" %}
-                    {% if c.page == "project" %}
-                    {% if c.title == tab %}
+                    {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
+                    {% for c in pages %}
                     <li><a href="{{ c.url }}">{{ c.title }}</a></li>
-                    {% endif %}
-                    {% endif %}
-                    {% endunless %}
-                    {% endif %}
                     {% endfor %}
                     {% endfor %}
                 </ul>

@@ -9,12 +9,6 @@
     <meta charset="utf-8">
 </head>
 
-{% for c in site.projects %}
-    {% if c.project == page.project %}
-        {% assign project = c %}
-    {% endif %}
-{% endfor %}
-
 <body>
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,21 +18,7 @@
                     <li><a href="\">home</a></li>
                     <li><a href="\about">about</a></li>
                     <li><a href="\projects">projects</a></li>
-                    <br />
-                    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
-                    {% for tab in project.tabs %}
-                    {% for c in site.pages %}
-                    {% if c.project == page.project %}
-                    {% unless c.categories contains "project" %}
-                    {% if c.page == "project" %}
-                    {% if c.title == tab %}
-                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
-                    {% endif %}
-                    {% endif %}
-                    {% endunless %}
-                    {% endif %}
-                    {% endfor %}
-                    {% endfor %}
+                    <li><a href="\contributors">contributors</a></li>
                 </ul>
             </nav>
             <h1>{{ page.title }}</h1>
