@@ -12,8 +12,10 @@ title: Contributors
     {% endfor %}
 {% endfor %}
 {% assign contributors = contributors | sort %}
-{% for c in contributors %}
 <div class="card">
-    <h2><a href="/contributors/{{ c }}">{{ c }}</a></h2>
-</div>
+<div class="collection">
+{% for c in contributors %}
+    <a href="/contributors/{{ c }}" class="collection-item">{{ c }}</a>
 {% endfor %}
+</div>
+</div>
