@@ -150,3 +150,8 @@ body > div > .card, .cite {
 table {
     margin: auto;
 }
+
+img {
+    margin: auto;
+    display: block;
+}

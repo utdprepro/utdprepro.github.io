@@ -2,6 +2,6 @@
 layout: contributor
 page: Contributors
 project: S16
-title: Axel Wing
+title: Efrain Nazario
 ---
 Concept Artist

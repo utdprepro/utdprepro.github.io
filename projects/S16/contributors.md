@@ -3,5 +3,5 @@ layout: project
 page: project
 project: S16
 title: Contributors
-cards: [Denzel Beunafe, Miso Bellaouar, Meagan Young, Axel Wing, Maria Neblett, Wil Gilmore]
+cards: [Miso Bellaouar, Denzel Beunafe, Jill Blue, Wil Gilmore, Efrain Nazario, Maria Neblett, Meagan Young]
 ---
