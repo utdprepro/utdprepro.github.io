@@ -18,14 +18,19 @@
 <body>
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="head">
+        <div class="navbar">
+            <a class="logo" href="\">PreProduction Collaborative</a>
             <nav>
                 <ul>
-                    <li><a href="\">home</a></li>
                     <li><a href="\about">about</a></li>
                     <li><a href="\projects">projects</a></li>
                     <li><a href="\contributors">contributors</a></li>
-                    <br />
+                </ul>
+            </nav>
+        </div>
+        <div class="head">
+            <nav>
+                <ul>
                     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
                     {% for tab in project.tabs %}
                     {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
@@ -43,7 +48,7 @@
         </div>
 
         <div class="card">
-            by {{ page.author }} <a href="{{ page.source }}">source</a>
+            by {{ page.author | join: ", " }} <a href="{{ page.source }}">source</a>
         </div>
 
         <footer>

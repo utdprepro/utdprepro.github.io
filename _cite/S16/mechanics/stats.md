@@ -3,7 +3,7 @@ layout: cite
 page: Mechanics
 project: S16
 title: Stats
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
 ---
 - **MES** mental stamina, your HP and how tired you are; if this hits zero, the battle is over

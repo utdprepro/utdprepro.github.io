@@ -3,7 +3,7 @@ layout: cite
 page: Story
 project: S16
 title: Plot
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/1K4H1369GSCRFLteF23n1rjDf_tke8aqb4F7cfBas3RI/edit?usp=sharing
 ---
 ### Prologue

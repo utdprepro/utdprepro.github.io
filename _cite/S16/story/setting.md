@@ -3,7 +3,7 @@ layout: cite
 page: Story
 project: S16
 title: Setting
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/1JHt39pMGXhQLWsqX2zr6g2NoRwodMRkLx43RGFzTqh8/edit?usp=sharing
 ---
 ### Limbo/Purgatory

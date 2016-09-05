@@ -1,0 +1,9 @@
+---
+layout: cite
+page: Bharata
+project: F15
+title: Bharata Fashion
+author: Jennifer Moravits
+source: https://drive.google.com/file/d/0Bxb_F9ToEshBcTRTQTdGelk2Yjg/view?usp=sharing
+---
+![{{ page.title }}](/projects/F15/regions/bharata/bharatafashion.png)

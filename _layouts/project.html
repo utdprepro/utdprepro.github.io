@@ -18,14 +18,19 @@
 <body>
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="head">
+        <div class="navbar">
+            <a class="logo" href="\">PreProduction Collaborative</a>
             <nav>
                 <ul>
-                    <li><a href="\">home</a></li>
                     <li><a href="\about">about</a></li>
                     <li><a href="\projects">projects</a></li>
                     <li><a href="\contributors">contributors</a></li>
-                    <br />
+                </ul>
+            </nav>
+        </div>
+        <div class="head">
+            <nav>
+                <ul>
                     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
                     {% for tab in project.tabs %}
                     {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
@@ -41,37 +46,31 @@
         {% if page.cards %}
             {% for card in page.cards %}
                 {% assign found = false %}
-                {% for c in site.cite %}
-                    {% if c.page == page.title %}
-                        {% if card == c.title %}
-                            {% assign found = true %}
-                            <div class="cite">
-                                <div class="card">
-                                    <h2>{{ c.title }}</h2>
-                                    {{ c.content | markdownify }}
-                                    <div class="tooltip">
-                                        {{ c.title }} by {{ c.author }}<br />
-                                        <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
-                                    </div>
-                                </div>
+                {% assign cites = site.cite | where: "page", page.title | where: "title", card | where: "project", page.project %}
+                {% for c in cites %}
+                    {% assign found = true %}
+                    <div class="cite">
+                        <div class="card">
+                            <h2>{{ c.title }}</h2>
+                            {{ c.content | markdownify }}
+                            <div class="tooltip">
+                                {{ c.title }} by {{ c.author | join: ", " }}<br />
+                                <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
                             </div>
-                        {% endif %}
-                    {% endif %}
+                        </div>
+                    </div>
                 {% endfor %}
                 {% unless found %}
-                    {% for c in site.pages %}
-                        {% if c.page == page.title %}
-                            {% if card == c.title %}
-                                <div class="card">
-                                    <h2><a href="{{ c.url }}">{{ c.title }}</a></h2>
-                                    {{ c.content | markdownify }}
-                                    <div class="tooltip">
-                                        {{ c.title }} by {{ c.author }}<br />
-                                        <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
-                                    </div>
-                                </div>
-                            {% endif %}
-                        {% endif %}
+                    {% assign pages = site.pages | where: "page", page.title | where: "title", card | where: "project", page.project %}
+                    {% for c in pages %}
+                        <div class="card">
+                            <h2><a href="{{ c.url }}">{{ c.title }}</a></h2>
+                            {{ c.content | markdownify }}
+                            <div class="tooltip">
+                                {{ c.title }} by {{ c.author | split: ", " }}<br />
+                                <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
+                            </div>
+                        </div>
                     {% endfor %}
                 {% endunless %}
             {% endfor %}

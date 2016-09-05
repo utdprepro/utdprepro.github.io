@@ -3,7 +3,7 @@ layout: cite
 page: Story
 project: S16
 title: Critical Path
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
 ---
 The game is fairly linear, organized into a prologue, 4 chapters, and the epilogue. You are free to travel between the villages using warp portals within the villages at any time.

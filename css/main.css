@@ -14,22 +14,49 @@ nav a, nav a:visited {
 nav ul, footer ul {
     padding: 0;
     display: inline;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
 }
 
 nav ul li, footer ul li {
     display: inline-block;
     vertical-align: middle;
     white-space: nowrap;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
-ul {
+.navbar {
+    background-color: #0097A7;
+    padding: 8px;
+    position: relative;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        padding-top: 32px;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+.logo, .logo:visited {
+    color: #fff;
+}
+
+.filter {
     list-style: none;
     text-align: center;
     display: inline;
     font-weight: bold;
 }
 
-li {
+.filter li {
     display: inline-block;
     padding-right: 8px;
     padding-left: 8px;
@@ -66,10 +93,8 @@ body {
 }
 
 .head {
-    background: #ccc;
-    background: linear-gradient(to bottom right, teal, turquoise);
-    padding: 20px;
-    padding-bottom: 90px;
+    background: #00B9D2;
+    padding: 10px 20px 90px 20px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }

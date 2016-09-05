@@ -5,9 +5,11 @@ title: Contributors
 ---
 {% assign contributors = "" | split:"|" %}
 {% for c in site.cite %}
-    {% unless contributors contains c.author %}
-        {% assign contributors = contributors | push: c.author %}
-    {% endunless %}
+    {% for author in c.author %}
+        {% unless contributors contains author %}
+            {% assign contributors = contributors | push: author %}
+        {% endunless %}
+    {% endfor %}
 {% endfor %}
 {% assign contributors = contributors | sort %}
 {% for c in contributors %}

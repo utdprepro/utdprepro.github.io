@@ -1,4 +1,4 @@
 ---
 layout: contributor
-title: Denzel Beunafe
+title: Caleb Pond
 ---

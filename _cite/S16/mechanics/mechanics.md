@@ -3,7 +3,7 @@ layout: cite
 page: Mechanics
 project: S16
 title: Mechanics Summary
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/15Mb3byA1BbSot5u1fLHHzQhG_gZKNPLVudQok1xxVZ0/edit?usp=sharing
 ---
 Val is the only party member for the sake of streamlining the game. She has 6 stats:

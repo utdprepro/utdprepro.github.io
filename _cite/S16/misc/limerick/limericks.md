@@ -3,7 +3,7 @@ layout: cite
 page: Limericks
 project: S16
 title: Limericks
-author: Denzel Beunafe
+author: Denzel Buenafe
 source: https://docs.google.com/document/d/1H1bR7ktdXdCGuXRK5SrGSjeDwj42xHxdOLupg7RjHZU/edit?usp=sharing
 ---
 **Concept:** To get people interested, we can design posters depicting characters from the game and have these limericks so they get the creepy yet cartoony vibe.

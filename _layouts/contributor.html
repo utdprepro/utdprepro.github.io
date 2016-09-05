@@ -12,21 +12,23 @@
 <body>
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="head">
+        <div class="navbar">
+            <a class="logo" href="\">PreProduction Collaborative</a>
             <nav>
                 <ul>
-                    <li><a href="\">home</a></li>
                     <li><a href="\about">about</a></li>
                     <li><a href="\projects">projects</a></li>
                     <li><a href="\contributors">contributors</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="head">
             <h1>{{ page.title }}</h1>
         </div>
 
         <div class="card">
             <h3>Filter:</h3>
-            <ul>
+            <ul class="filter">
                 {% assign sorted_projects = site.projects | sort: "order" %}
                 {% for project in sorted_projects %}
                     <li>
@@ -43,13 +45,13 @@
 
         {% assign sorted_cites = site.cite | sort: "title" %}
         {% for c in sorted_cites %}
-            {% if c.author == page.title %}
+            {% if c.author contains page.title %}
                 <div class="cite {{ c.project }}">
                     <div class="card">
                         <h2>{{ c.title }}</h2>
                         {{ c.content | markdownify }}
                         <div class="tooltip">
-                            {{ c.title }} by {{ c.author }}<br />
+                            {{ c.title }} by {{ c.author | join: ", " }}<br />
                             <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
                         </div>
                     </div>
