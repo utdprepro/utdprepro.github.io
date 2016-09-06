@@ -4,6 +4,7 @@ page: Mechanics
 project: S16
 title: Battle Flow
 author: Denzel Buenafe
+media: Text
 source: https://docs.google.com/document/d/101qLLBcaPJFMcJ-C01EjrZeE2x5IZrrZjkhVExoGkTU/edit?usp=sharing
 ---
 ### Initiation

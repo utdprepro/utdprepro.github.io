@@ -4,6 +4,7 @@ page: Mechanics
 project: F15
 title: Controls
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
 ---
 The control scheme is basically this:

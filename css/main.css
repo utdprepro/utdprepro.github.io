@@ -52,7 +52,6 @@ nav ul li, footer ul li {
 .filter {
     list-style: none;
     text-align: center;
-    display: inline;
     font-weight: bold;
 }
 

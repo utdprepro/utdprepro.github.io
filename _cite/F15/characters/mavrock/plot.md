@@ -4,6 +4,7 @@ page: Mavrock Krey
 project: F15
 title: Plot
 author: [Maria Neblett, Kenny Huynh]
+media: Text
 source: https://docs.google.com/document/d/1abFfYFc5uo71gUsy2EVlHjMWQq6rpHnLijMBk0--eas/edit?usp=sharing
 ---
 #### Tutorial

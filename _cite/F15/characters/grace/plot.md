@@ -4,6 +4,7 @@ page: Grace Vester
 project: F15
 title: Plot
 author: [Maria Neblett, Ray Ahmed]
+media: Text
 source: https://docs.google.com/document/d/1PDuRD7BV5in1vlr5BTXu5r-kileI96BJ8yjqYZmRDD0/edit?usp=sharing
 ---
 #### Tutorial

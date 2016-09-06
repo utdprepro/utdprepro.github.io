@@ -4,6 +4,7 @@ page: Story
 project: F15
 title: Church of the Awaited Ascenders
 author: Leonardo Noriega
+media: Text
 source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
 ---
 > "Once in the Time of Unending Twilight, eleven great flying serpents circled the infinite sky. Their scales were formed of primordial vestiges of long-forgotten earths and celestial bodies, and their wings soared over the winds of dreams ancient and future, forever circling in an ancient, unceasing current. These 11 were the first and last moons and suns of a forever unliving and undying galaxies, occurring concurrently of each other in an unbroken cycle of entropy and ectropy. They were alpha and omega, both.

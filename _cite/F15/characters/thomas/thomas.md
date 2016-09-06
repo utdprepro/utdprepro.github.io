@@ -4,6 +4,7 @@ page: Thomas
 project: F15
 title: Thomas
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
 ---
 Possible Party companion for Mavrock. The nephew of Ervie, he came to know Mavrock when the two of them hadn’t even hit double digits yet, becoming Mavrock’s servant and advisor of sorts as the two grew up. While they are well past their days of boyhood, Thomas is still Mavrock’s most trusted ally and can be counted on to keep Mavrock from going crazy with responsibilities, whether it be going with him to hunt or helping him hide the body of a political enemy.

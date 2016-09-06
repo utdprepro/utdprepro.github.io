@@ -4,6 +4,7 @@ page: Mechanics
 project: F15
 title: Systems
 author: [Caleb Pond, Aamir Syed, Ed Stevenson, Tomer Braff]
+media: Text
 source: https://docs.google.com/document/d/1GjwVWnLeDUU-r5PCRACQ6vopf6BhAnov4TLLJ_v56yo/edit?usp=sharing
 ---
 ### Overarching Systems

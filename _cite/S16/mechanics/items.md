@@ -4,6 +4,7 @@ page: Mechanics
 project: S16
 title: Items
 author: Denzel Buenafe
+media: Text
 source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
 ---
 ### Equipment

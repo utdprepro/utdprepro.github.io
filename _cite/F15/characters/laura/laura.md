@@ -4,6 +4,7 @@ page: Laura
 project: F15
 title: Laura
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
 ---
 A party member of Costine. An ex-nun under Sister Theresa, Laura was “forced to retire” after having endangered Vanator younglings of a nearby Clan and nearly having the nunnery attacked. She’s very young, and has been molded by some of the people she knows to dislike Vanators, for good reason.

@@ -4,6 +4,7 @@ page: Ennea
 project: S16
 title: Project Scope
 author: Denzel Buenafe
+media: Text
 source: https://docs.google.com/document/d/1mTjd8VXrbiVHVk1mRkrv8pfPzkBGmDmaNcpvt90ikVs/edit?usp=sharing
 ---
 The project would be a medium-sized undertaking, very much feeling like an indie game with art and mechanics trimmed down to the basics. On the other hand, the assets required as well as story are very fleshed out but a balance between battle and exploration would be fantastic. The best situation is to have some concept art, a refined battle system, and a clear main plotline fleshed out by the end of the semester. The roles required would be:

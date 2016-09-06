@@ -4,6 +4,7 @@ page: Klaus
 project: F15
 title: Klaus
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
 ---
 Possible Party Companion for Costine. A Clanless Vanator, Klaus is a fallen warrior who has had to go through life alone, afraid and constantly fighting. Reckless in battle, headstrong and loyal to only himself, he’s a bit of an oddity by Vanator standards as he has severed WILLINGLY all his ties to his Clan after his Clan Leader traded him into slavery in exchange for the Clan not being killed by Slayers.

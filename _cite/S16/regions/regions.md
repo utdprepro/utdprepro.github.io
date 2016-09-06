@@ -4,6 +4,7 @@ page: Regions
 project: S16
 title: Regions
 author: Denzel Buenafe
+media: Text
 source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
 ---
 There are 11 areas of the game minus the intro corridor and final dungeon, each corresponding to a miniboss/boss. Each region has a minor dungeon (the lands around the village), a major dungeon (where you fight the miniboss/boss), and generally a village.

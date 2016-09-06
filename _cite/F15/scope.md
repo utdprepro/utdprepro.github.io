@@ -4,6 +4,7 @@ page: War
 project: F15
 title: Project Scope
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
 ---
 The scope for this game is... massive to say the least. Besides the 3 major countries, there are 2 countries that might also need designing due to how they do have to do with the storyline and all the heroes will eventually visit these countries, albeit for different reasons. As such, there’s going to be a TON of world building to do, though I do have a basic idea as to what each country’s aesthetic is and how they intertwine. However, for the sake of time, the world-building would be limited to these 5 countries, maybe more IF the storyline calls for it. Plus, since all the countries’ technology is different, that’s also going to entail a lot of designing, and the animals are different from our world’s, so there’s also the matter of that. And we’re going to have to figure out the culture and style of each group of people so that’s also going to entail some concept in that area.

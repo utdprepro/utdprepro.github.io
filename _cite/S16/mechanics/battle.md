@@ -4,6 +4,7 @@ page: Mechanics
 project: S16
 title: Battle
 author: Denzel Buenafe
+media: Text
 source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
 ---
 Val will face many hostile spirits during her travels, all of which aim to render her unable of having energy and thus easy to rend her soul from her body. Due to their incorporeal nature, spirits cannot be harmed by physical attacks. However, by learning how to wield Virtue, one can fight against the spirits and let them move on.

@@ -4,6 +4,7 @@ page: Costine
 project: F15
 title: Plot
 author: Ray Ahmed
+media: Text
 source: https://docs.google.com/document/d/1e1-EPNyZxFx0LOD5N-GhTWFRAtUPxY6Wrglt3Fxy5MQ/edit?usp=sharing
 ---
 #### Tutorial

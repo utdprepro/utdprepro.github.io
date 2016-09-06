@@ -4,6 +4,7 @@ page: Arjun Parkash
 project: F15
 title: Plot
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1YKiQrY3oUFUSypSIqW2m1cVwviPrbi664LfuOp4rWcQ/edit?usp=sharing
 ---
 #### Tutorial

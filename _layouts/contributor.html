@@ -27,7 +27,6 @@
         </div>
 
         <div class="card">
-            <h3>Filter:</h3>
             <ul class="filter">
                 {% assign sorted_projects = site.projects | sort: "order" %}
                 {% for project in sorted_projects %}
@@ -40,13 +39,24 @@
                         </label>
                     </li>
                 {% endfor %}
+                <br />
+                {% for filter in site.filters %}
+                    <li>
+                        {{ filter }}
+                        <br />
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <div class="slider round filter" id="{{ filter }}"></div>
+                        </label>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
 
         {% assign sorted_cites = site.cite | sort: "title" %}
         {% for c in sorted_cites %}
             {% if c.author contains page.title %}
-                <div class="cite {{ c.project }}">
+                <div class="cite {{ c.project }} {{ c.media }}">
                     <div class="card">
                         <h2>{{ c.title }}</h2>
                         {{ c.content | markdownify }}

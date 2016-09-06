@@ -4,6 +4,7 @@ page: Sister Theresa
 project: F15
 title: Sister Theresa
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
 ---
 Only appears for a brief time in Costine’s storyline, but still important. Sister Theresa is VERY old and has run the nunnery for a very long time. Yet, she calls herself and is considered to be an ally to the Vanators, often providing hidden sanctuary to them and helping them deal with certain political issues under her sway. She is a very old friend of Costine’s, and as such has earned the title Honorary Vanator.

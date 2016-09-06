@@ -4,6 +4,7 @@ page: Mechanics
 project: F15
 title: Features
 author: Maria Neblett
+media: Text
 source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
 ---
 The core features are different for the characters given how different they are, but the placement of them is similar. At the top left of the screen, there are two bars; 1 that measures health, and the other measures the thing that fits best for the character.
