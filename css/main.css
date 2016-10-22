@@ -276,3 +276,31 @@ input:checked + .slider:before {
 .collection a.collection-item:not(.active):hover {
 	background-color:#ddd
 }
+
+.centerimages {
+    text-align: center;
+}
+
+.card img {
+    margin: auto;
+    display: block;
+    width: calc( 100% );
+    max-width: unset;
+}
+
+.card > p:first-child > img:first-child {
+    margin: -20px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+    width: calc( 100% + 40px);
+}
+
+.card .collection {
+    margin: -20px;
+}
+
+.centerimages img {
+    width: 30%;
+    display: inline-block;
+    margin: unset;
+}
