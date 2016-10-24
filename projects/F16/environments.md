@@ -11,7 +11,8 @@ locations: [Guardian Sanctum, The Wilds, Temple of Servants, Temple of Merchants
 {% for c in cites %}
 <div class="cite">
 <div class="card">
-<h2>{{ c.title }}</h2>
+<div class="card-content">
+<span class="card-title">{{ c.title }}</span>
 {{ c.content | markdownify }}
 <div class="tooltip">
 {{ c.title }} by {{ c.author | join: ", " }}<br />
@@ -19,12 +20,15 @@ locations: [Guardian Sanctum, The Wilds, Temple of Servants, Temple of Merchants
 </div>
 </div>
 </div>
+</div>
 {% endfor %}
 {% endfor %}
 <div class="card">
+<div class="card-content">
 <div class="collection">
 {% for card in page.locations %}
 <a href="{{ card | relative_url | replace: "'",'' | slugify }}" class="collection-item">{{ card }}</a>
 {% endfor %}
+</div>
 </div>
 </div>

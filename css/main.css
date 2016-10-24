@@ -1,64 +1,18 @@
-nav {
+.inline {
+    list-style: none;
     text-align: center;
-    color: #fff;
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-}
-
-nav a, nav a:visited {
-    color: #fff;
-    font-weight: normal;
-}
-
-nav ul, footer ul {
-    padding: 0;
     display: inline;
-    list-style: none;
-    text-align: center;
     font-weight: bold;
 }
 
-nav ul li, footer ul li {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-.navbar {
-    background-color: #0097A7;
-    padding: 8px;
-    position: relative;
-}
-
-@media screen and (max-width: 640px) {
-    .navbar {
-        padding-top: 32px;
-    }
-}
-
-.logo {
-    position: absolute;
-    left: 8px;
-    top: 8px;
-}
-
-.logo, .logo:visited {
-    color: #fff;
-}
-
-.filter {
-    list-style: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-.filter li {
+.inline li {
     display: inline-block;
     padding-right: 8px;
     padding-left: 8px;
+}
+
+nav {
+    padding-left: 15px;
 }
 
 footer {
@@ -70,14 +24,20 @@ footer {
     padding-bottom: 10px;
 }
 
-a, a:visited {
-    color: teal;
-    text-decoration: none;
+footer ul {
+    padding: 0;
+    display: inline;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
 }
 
-a:hover, a:focus, a:active {
-    color: turquoise !important;
-    outline: 0;
+footer ul li {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 html {
@@ -90,57 +50,111 @@ body {
     background: transparent;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .head {
     background: #00B9D2;
-    padding: 10px 20px 90px 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-bottom: -50px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.head h1 {
-    color: #fff;
-    font-size: 2em;
-    width: 90%;
-    max-width: 900px;
+table {
     margin: auto;
-    border-bottom: 1px solid;
+}
+
+.inline form {
+    display: inline-block;
+}
+
+.off {
+    width: 90%;
+    max-width: 940px;
+    margin: auto;
+    margin-top: 10px;
+    color: gray;
 }
 
 .card {
-    background: #fff;
-    border-radius: 2px;
     width: 90%;
     max-width: 940px;
+    margin: auto !important;
+    margin-top: 20px !important;
+}
+
+.card-content > p:first-child > img:first-child {
     margin: auto;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    padding: 20px;
+    display: block;
+    margin: -20px;
+    width: calc( 100% + 40px);
+    max-width: unset;
 }
 
-.cite {
-    width: 90%;
-    max-width: 940px;
+.btn, .btn-flat {
+    padding: 0 !important;
+}
+
+a.btn, a.btn-flat, input.btn, input.btn-flat {
+    padding: 0 2rem !important;
+}
+
+.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+    padding: 0 2rem !important;
+    height: 100% !important;
+}
+
+body > .collapsible, body > .collection {
+    width: 90% !important;
+    max-width:940px !important;
+    margin:auto !important;
+    margin-bottom:20px !important;
+    margin-top: 20px !important;
+}
+
+.collapsible-body {
+    padding: 2rem;
+}
+
+.collapsible-title span, .collection-header {
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 300;
+    cursor: default;
+}
+
+.collapsible-title div {
+    cursor: default;
+}
+
+.collection {
+    margin: -20px;
+}
+
+.collection-item i {
+    width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: -10px;
+}
+
+[type="checkbox"] + label {
+    margin-right: 35px;
+    line-height: unset !important;
+}
+
+img {
     margin: auto;
-    position: relative;
 }
 
-body > div > .card, .cite {
-    margin-top: -80px;
-}
-
-.card ~ .card, .cite ~ .cite, .card ~ .cite, .cite ~ .card {
-    margin-top: 20px;
-}
-
-.cite .card {
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    width: 100%;
-    margin-left: -20px;
-}
-
-.cite:hover .card {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+img.active {
+    max-width: unset;
 }
 
 .tooltip {
@@ -157,6 +171,10 @@ body > div > .card, .cite {
         bottom: 0;
         left: 0;
         z-index: 1;
+    }
+
+    footer {
+        margin-bottom: 90px;
     }
 }
 
@@ -178,129 +196,4 @@ body > div > .card, .cite {
       position: absolute;
       left: -10px;
     }
-}
-
-table {
-    margin: auto;
-}
-
-img {
-    margin: auto;
-    display: block;
-}
-
-/* The switch - the box around the slider */
-.switch {
- position: relative;
- display: inline-block;
- width: 60px;
- height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {display:none;}
-
-/* The slider */
-.slider {
- position: absolute;
- cursor: pointer;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background-color: #ccc;
- -webkit-transition: .4s;
- transition: .4s;
-}
-
-.slider:before {
- position: absolute;
- content: "";
- height: 26px;
- width: 26px;
- left: 4px;
- bottom: 4px;
- background-color: white;
- -webkit-transition: .4s;
- transition: .4s;
-}
-
-input:checked + .slider {
- background-color: #2196F3;
-}
-
-input:focus + .slider {
- box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
- -webkit-transform: translateX(26px);
- -ms-transform: translateX(26px);
- transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
- border-radius: 34px;
-}
-
-.slider.round:before {
- border-radius: 50%;
-}
-
-
-.collection {
-	border-radius:2px;
-	overflow:hidden;
-	position:relative
-}
-
-.collection .collection-item {
-	background-color:#fff;
-	line-height:1.5rem;
-	padding:10px 20px;
-	margin:0;
-	border-bottom:1px solid #e0e0e0
-}
-
-.collection .collection-item:last-child {
-	border-bottom:none
-}
-
-.collection a.collection-item {
-	display:block;
-	transition:.25s;
-	color:#26a69a
-}
-
-.collection a.collection-item:not(.active):hover {
-	background-color:#ddd
-}
-
-.centerimages {
-    text-align: center;
-}
-
-.card img {
-    margin: auto;
-    display: block;
-    width: calc( 100% );
-    max-width: unset;
-}
-
-.card > p:first-child > img:first-child {
-    margin: -20px;
-    margin-top: -35px;
-    margin-bottom: -35px;
-    width: calc( 100% + 40px);
-}
-
-.card .collection {
-    margin: -20px;
-}
-
-.centerimages img {
-    width: 30%;
-    display: inline-block;
-    margin: unset;
 }

@@ -7,8 +7,10 @@ title: PrePro Collaborative
 <div class="cite">
 <a href="{{ post.url }}">
 <div class="card">
-<h3 style="cursor: pointer;">{{ post.title }}</h3>
+<div class="card-content">
+<span class="card-title" style="cursor: pointer;">{{ post.title }}</span>
 {{ post.excerpt }}
+</div>
 </div>
 </a>
 </div>

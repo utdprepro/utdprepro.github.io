@@ -4,6 +4,8 @@
 <head>
     <title>{{ page.title }}</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/markdown7.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <meta charset="utf-8">
@@ -16,40 +18,54 @@
 {% endfor %}
 
 <body>
+    <nav class="teal">
+        <div class="nav-wrapper">
+            <a class="brand-logo" href="\">PreProduction Collaborative</a>
+            <a href="#" data-activates="mobile-down" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="\about">about</a></li>
+                <li><a href="\projects">projects</a></li>
+                <li><a href="\contributors">contributors</a></li>
+            </ul>
+            <ul id="mobile-down" class="side-nav">
+                <li><a href="\about">about</a></li>
+                <li><a href="\projects">projects</a></li>
+                <li><a href="\contributors">contributors</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="navbar">
-            <a class="logo" href="\">PreProduction Collaborative</a>
-            <nav>
-                <ul>
-                    <li><a href="\about">about</a></li>
-                    <li><a href="\projects">projects</a></li>
-                    <li><a href="\contributors">contributors</a></li>
-                </ul>
-            </nav>
-        </div>
+
         <div class="head">
-            <nav>
-                <ul>
-                    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
-                    <li><a href="{{ project.url }}assets/">Assets</a></li>
-                    {% for tab in project.tabs %}
-                    {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
-                    {% for c in pages %}
-                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
-                    {% endfor %}
-                    {% endfor %}
-                </ul>
+            <nav class="teal lighten-2" style="padding-left: unset;height: unset;">
+                <div class="nav-wrapper">
+                    <ul style="height: inherit;overflow-x: auto;padding-left: unset;">
+                        <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+                        <li><a href="{{ project.url }}assets/">Assets</a></li>
+                        {% for tab in project.tabs %}
+                        {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
+                        {% for c in pages %}
+                        <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
             </nav>
             <h1>{{ page.title }}</h1>
         </div>
 
         <div class="card">
-            {{ content }}
+            <div class="card-content">
+                {{ content }}
+            </div>
         </div>
 
         <div class="card">
-            by {{ page.author | join: ", " }} <a href="{{ page.source }}">source</a>
+            <div class="card-content">
+                by {{ page.author | join: ", " }} <a href="{{ page.source }}">source</a>
+            </div>
         </div>
 
         <footer>
@@ -62,6 +78,10 @@
             </ul>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="/js/init.js" type="text/javascript"></script>
 </body>
 
 </html>

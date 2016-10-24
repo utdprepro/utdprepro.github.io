@@ -8,11 +8,13 @@ title: Projects
 <div class="cite">
 <a href="{{ project.url }}">
 <div class="card">
-<h3 style="cursor: pointer;">{{ project.project }}: {{ project.title }}</h3>
+<div class="card-content">
+<span class="card-title" style="cursor: pointer;">{{ project.project }}: {{ project.title }}</span>
 
 Creative lead: {{ project.creative_lead }}
 
 {{ project.content }}
+</div>
 </div>
 </a>
 </div>

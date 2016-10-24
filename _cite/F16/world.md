@@ -11,11 +11,9 @@ The player would fight each titan in a different area. The change in area would 
 
 References:
 
-<div class="centerimages" markdown="1">
 ![](http://resources.touropia.com/gfx/d/rock-cut-tombs-and-temples/petra.jpg)
 ![](http://farm2.static.flickr.com/1241/1445382505_ad8d352777_b.jpg)
 ![](http://resources.touropia.com/gfx/d/rock-cut-tombs-and-temples/lycian_tombs.jpg)
-</div>
 ![](https://upload.wikimedia.org/wikipedia/commons/7/73/Persia.jpg)
 
 ### Key Locations
