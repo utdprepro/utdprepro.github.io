@@ -5,9 +5,9 @@ project: F16
 title: Pad'ua
 author: [Ara Beara, Denzel Buenafe, Aven Blue]
 media: Text
-source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637guedU4M/edit?usp=sharing
+drive_id: 1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637guedU4M
 ---
-### Personality
+##### Personality
 
 - Refined and pure image 
 - Old monk, patient, short words
@@ -21,7 +21,7 @@ source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637
 - Tries to come to grips that she won't always be there like how can i promise her future
 - Eventually talks about how ashra could start up more silk guardians, start interaction to promise family and love for ashra in the future
 
-### Background
+##### Background
 
 - Older 70 or 60 years
 - 50 years back is the corruption started for farmer gods
@@ -37,18 +37,18 @@ source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637
 	- Also adopted and bonds with Ash’ra
 	- Former high priestess of the Silk Guardians at the Guardian Sanctum
 
-### Motives
+##### Motives
 
 - Born in or adopted 
 - A month sense corruption and is fresh in mind and ambitious
 - Shuts down when facing her own fears and leaves Ash’ra to help herself
 
-### Likes
+##### Likes
 
 - Jokes and Humor to cope with issues around 
 - Creating things out of silk was her original hobby that she did with the other priests before they died so she teaches Ashra how to do it 
 
-### Fears
+##### Fears
 
 - Paranoid and overly cautious 
 - Fear of fire

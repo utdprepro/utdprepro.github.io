@@ -5,9 +5,9 @@ project: S15
 title: Lore
 author: Kenny Huynh
 media: Text
-source: https://docs.google.com/document/d/1DgD2bEkEc-CNMqlDb9TiO23Dy6ZfZ2uqS0I11s2q-Bg/edit?usp=sharing
+drive_id: 1DgD2bEkEc-CNMqlDb9TiO23Dy6ZfZ2uqS0I11s2q-Bg
 ---
-### Introduction Pitch
+##### Introduction Pitch
 
 The story begins within The Village, a small collection of people and tents established on a relatively flat area of the desert. Located within the center of the village is circular dais that pulses a faint cyan light and hums a low-pitched sound with a cadence like that of a heartbeat. At the center of this dais is a small fountain that has a very weak flow of water, the only source the small village has. Three of the village’s occupants sit around the fountain with bowls and jars to collect what little they may, but as the last villager begins to fill their jar, the flow weakens, eliciting looks of worry from the group. From the distance, a fourth villager can be seen returning from a recent scavenging, a small sack carried with him. The three gather around him eagerly to see what he has brought back in hopes that something was found that could possibly prolong their survival in the desert, yet as he empties his sack, nothing of use is found amongst the artifacts retrieved. Disappointed, the group scatters as the scavenger approaches one of the tents.
 

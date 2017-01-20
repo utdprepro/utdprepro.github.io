@@ -5,7 +5,7 @@ project: S16
 title: Limericks
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/document/d/1H1bR7ktdXdCGuXRK5SrGSjeDwj42xHxdOLupg7RjHZU/edit?usp=sharing
+drive_id: 1H1bR7ktdXdCGuXRK5SrGSjeDwj42xHxdOLupg7RjHZU
 ---
 **Concept:** To get people interested, we can design posters depicting characters from the game and have these limericks so they get the creepy yet cartoony vibe.
 

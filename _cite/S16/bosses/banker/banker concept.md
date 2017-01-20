@@ -5,6 +5,5 @@ project: S16
 title: Banker Concept
 author: Meagan Young
 media: Image
-source: https://drive.google.com/file/d/0B-1iHvrQa5F_YXdfcVFoOWl4RW8/view?usp=sharing
+drive_id: 0B-1iHvrQa5F_YXdfcVFoOWl4RW8
 ---
-![{{ page.title }}](/projects/S16/bosses/banker/banker concept.png)

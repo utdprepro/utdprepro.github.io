@@ -5,7 +5,7 @@ project: F16
 title: The Wilds
 author: [Ara Beara, Denzel Buenafe]
 media: Text
-source: https://docs.google.com/document/d/1sBcnuKLK-aVyYSlkSwPByij3SGw7F01g18UM9hEfDu8/edit?usp=sharing
+drive_id: 1sBcnuKLK-aVyYSlkSwPByij3SGw7F01g18UM9hEfDu8
 ---
 - Non-corrupted normal areas
 - Surrounding areas of Guardian Sanctuary

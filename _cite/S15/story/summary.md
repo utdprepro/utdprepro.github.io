@@ -5,7 +5,7 @@ project: S15
 title: Story Summary
 author: Caleb Pond
 media: Text
-source: https://docs.google.com/document/d/1S2jJjhIiwHJY9Bwv7sVnJlWi5FcrU7rFbiRPqWLbx2g/edit?usp=sharing
+drive_id: 1S2jJjhIiwHJY9Bwv7sVnJlWi5FcrU7rFbiRPqWLbx2g
 ---
 The ruins of the lost civilization contain powerful artifacts, and lost technology. This technology is extremely advanced, all of its secrets are lost to time. It is so advanced that it may as well be magic. Some sections of the ruins may have effects that counter normal laws of nature, such as space or gravity. You can retrofit collected tech that allows the last bastion of civilization, your home, to survive. You are your village’s last hope for survival.
 

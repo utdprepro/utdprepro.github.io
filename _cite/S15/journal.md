@@ -5,9 +5,9 @@ project: S15
 title: SandGlass Design Journal
 author: Caleb Pond
 media: Text
-source: https://docs.google.com/document/d/1cJkgkTOH593-Qb8T0gHzJXh5ANJHaHSLTTKTofwHMUQ/edit?usp=sharing
+drive_id: 1cJkgkTOH593-Qb8T0gHzJXh5ANJHaHSLTTKTofwHMUQ
 ---
-### January 4th 2015
+##### January 4th 2015
 
 > This section is before the idea was really in place, so this is less useful
 
@@ -183,7 +183,7 @@ Low Replay Value
 
     - Right Thumbstick Push = Center camera behind player?
 
-### 1/22/2014 Summary of Progress so Far
+##### 1/22/2014 Summary of Progress so Far
 
 Create a 3D platformer where the main method of platforming is sliding down dunes of sand.
 
@@ -203,7 +203,7 @@ I want each level to be like a wonderfully crafted poem or metaphor. The section
 
 Gameplay will focus around redirecting momentum
 
-#### Ways of redirecting movement (Manipulating Momentum)
+###### Ways of redirecting movement (Manipulating Momentum)
 
 General Movement: Moving the analog back and forth
 
@@ -227,7 +227,7 @@ Wind Tunnels: How do these work? can the player switch between different tunnels
 
 Drifting: How slidey do we want the surfing to be? Is there a purpose in making it more slidey like the drift mechanic in mario kart?
 
-#### Ways of Hindering Movement
+###### Ways of Hindering Movement
 
 Hitting a wall: This can be good or bad. If the player hits a wall that allows them to collect a secret that is good. Otherwise it will slow the player down which is frustrating.
 
@@ -245,7 +245,7 @@ Good now take everything there and flesh it out ^
 
 Reference: SSX3, Sonic Riders, Journey, 1080°
 
-### 1/29/2014
+##### 1/29/2014
 
 The game should be challenging but not too challenging.
 

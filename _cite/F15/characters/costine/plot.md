@@ -5,9 +5,9 @@ project: F15
 title: Plot
 author: Ray Ahmed
 media: Text
-source: https://docs.google.com/document/d/1e1-EPNyZxFx0LOD5N-GhTWFRAtUPxY6Wrglt3Fxy5MQ/edit?usp=sharing
+drive_id: 1e1-EPNyZxFx0LOD5N-GhTWFRAtUPxY6Wrglt3Fxy5MQ
 ---
-#### Tutorial
+###### Tutorial
 
 Post-revolt, 200 years back, the Vanators, with the Council are tentatively living somewhere in Aldorf. Understanding that they need to establish peaceful relations with humans in order to successfully coexist, they head to the capital of Aldorf to talk about trade routes, possibly a reconciliatory event between Vanators and humans, as currently their relationship is on shaky ground. Costine and Pierce are the representatives of the Vanators in this exchange.
 
@@ -31,7 +31,7 @@ Time-skip - 1 Year Later(?): Pierce is exiled for his dangerous ideals, and in h
 
 After the tutorial 200 Years Pass
 
-#### Primary Conflict
+###### Primary Conflict
 
 Costine is summoned to the Council of Originals, where the council brings up the fact that within the past half year since they’ve convened, 30 colonies have been forced to move and 4 have been completely wiped out by the Vladimirians and Aldorf Slayers.
 
@@ -39,7 +39,7 @@ Costine is summoned to the Council of Originals, where the council brings up the
 
 - Kilesso, the 1st Original, suggests that one of them must travel and warn the major countries of the world, to prepare them all for potential war. Costine volunteers, as she and only 2 other Originals are Neutral and represent the race without bias.
 
-#### Rising Action
+###### Rising Action
 
 During this time, Costine will be traveling to the countries of Aldorf, and Marvansk
 
@@ -104,7 +104,7 @@ During this time, Costine will be traveling to the countries of Aldorf, and Marv
 
     - Jane’s Journey (Part III)
 
-#### Climax
+###### Climax
 
 Just as they’re beginning to make war preparations, Costine receives word that a nearby colony needs assistance. Going with Laura and Klaus, she gets separated from them when she is captured by Vladimirians while keeping them from going after her two companions. Captured, for several days she is stuck in captivity before making it to the north of Bharata, on the brink of death because of her inability to stand heat. However, she is rescued by her two companions and a merchant by the name of Arjun (romanceable ally), who if she gets a strong enough relation to him, he can later help her convince Bharata to assist the Vanators.
 
@@ -120,7 +120,7 @@ As they fly over Lorcia, they are forced to stop when they see Lorcia is swarmin
 
 They make it back north in Marvansk, where the news of Pierce have arrived. He has allied himself with Helyon and plans to destroy every single country he can, and Costine must use her allies to take him down at last, uniting all 4 of their armies and allies together.
 
-#### Falling Action
+###### Falling Action
 
 After having defeated Pierce, Costine has a while to do a bunch of missions that can improve and worsen relations with multiple countries, strengthening the bonds between them and helping the Vanators adjust to human society.
 
@@ -132,7 +132,7 @@ After having defeated Pierce, Costine has a while to do a bunch of missions that
 
 - Jane’s Journey (Part IV) - OPTIONAL
 
-#### Conclusion
+###### Conclusion
 
 Good ending: Costine has killed either 1 hero or none, has kept her species alive and while might have lost some colonies has kept most of them alive. Her relations with some countries might not be the best, but they’re stable. Arjun does manage to talk to Bharata and when the United Powers convene there, a new bill of rights including the ones for Vanators is passed, allowing for her people to have more freedoms than before. Vanators and Marvanskns now live in harmony and are strong allies.
 

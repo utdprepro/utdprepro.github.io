@@ -5,46 +5,68 @@
     <title>{{ page.title }}</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/markdown7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <meta charset="utf-8">
 </head>
 
 <body>
-    <nav class="teal">
-        <div class="nav-wrapper">
-            <a class="brand-logo" href="\">PreProduction Collaborative</a>
-            <a href="#" data-activates="mobile-down" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="\about">about</a></li>
-                <li><a href="\projects">projects</a></li>
-                <li><a href="\contributors">contributors</a></li>
-            </ul>
-            <ul id="mobile-down" class="side-nav">
-                <li><a href="\about">about</a></li>
-                <li><a href="\projects">projects</a></li>
-                <li><a href="\contributors">contributors</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <div class="head">
-            <h1>{{ page.title }}</h1>
-        </div>
-
-        {% unless page.nocard %}
-        <div class="card">
-            <div class="card-content">
-                {% endunless %}
-                    {{ content }}
-                {% unless page.nocard %}
+    <header>
+        <nav class="teal">
+            <div class="nav-wrapper" style="padding: 0 1rem;">
+                <div class="col s12">
+                    <a href="\" class="breadcrumb">PreProduction Collaborative</a>
+                    {% if page.title != "PrePro Collaborative" %}
+                    <a href="{{ page.url }}" class="breadcrumb">{{ page.title }}</a>
+                    {% endif %}
+                    <a href="#" data-activates="mobile-down" class="button-collapse right"><i class="material-icons">menu</i></a>
+                    {% assign sortedprojects = site.projects | sort: "order" %}
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="tab"><a href="/contributors/">Contributors</a></li>
+                        {% for project in sortedprojects reversed %}
+                            <li class="tab"><a href="{{ project.url }}">{{ project.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <ul id="mobile-down" class="side-nav">
+                        <li class="tab"><a href="/contributors/">Contributors</a></li>
+                        {% for project in sortedprojects reversed %}
+                            <li class="tab"><a href="{{ project.url }}">{{ project.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-        </div>
-        {% endunless %}
+        </nav>
+    </header>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="container"><div class="row" style="margin-top: 2rem;">
+
+        {% if page.cards %}
+            {% for card in page.cards %}
+                {% for page in site.content %}
+                    {% if page.title == card %}
+                        {% if page.nocard %}
+                            {{ page.content }}
+                        {% else %}
+                            <div class="card">
+                                <div class="card-content">
+                                {{ page.content | markdownify }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% elsif page.nocard %}
+            {{ content }}
+        {% else %}
+            <div class="card">
+                <div class="card-content">
+                {{ content }}
+                </div>
+            </div>
+        {% endif %}
 
         <footer>
             <ul>
@@ -54,10 +76,11 @@
                 <li><a href="/feed.xml">feed</a></li>
             </ul>
         </footer>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    </div></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="/js/init.js" type="text/javascript"></script>
 </body>
 

@@ -5,6 +5,5 @@ project: F15
 title: Arjun Parkash Fancy Clothes
 author: Wil Gilmore
 media: Image
-source: https://drive.google.com/file/d/0B-R6wZWb9lqhejRUMkRINHlMOG8/view?usp=sharing
+drive_id: 0B-R6wZWb9lqhejRUMkRINHlMOG8
 ---
-![{{ page.title }}](/projects/F15/characters/arjun/arjunfancy.jpg)

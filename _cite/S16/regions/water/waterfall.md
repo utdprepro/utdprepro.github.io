@@ -4,7 +4,6 @@ page: Water Region
 project: S16
 title: Waterfall
 author: Maria Neblett
-media: Image
-source: https://drive.google.com/file/d/0B-EgRPOLo_vCTFNESXNMR2kybkU/view?usp=sharing
+media: File
+drive_id: 0B-EgRPOLo_vCTFNESXNMR2kybkU
 ---
-[Click here to download "Waterfall.psd"](/projects/S16/regions/water/Waterfall.psd)

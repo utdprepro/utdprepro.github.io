@@ -5,6 +5,5 @@ project: F15
 title: Marvana Fauna
 author: Denzel Buenafe
 media: Image
-source: https://drive.google.com/file/d/0B1jPqXZEyu3vVlE1NlNZQXlYSEE/view?usp=sharing
+drive_id: 0B1jPqXZEyu3vVlE1NlNZQXlYSEE
 ---
-![{{ page.title }}](/projects/F15/regions/marvana/marvanafauna.png)

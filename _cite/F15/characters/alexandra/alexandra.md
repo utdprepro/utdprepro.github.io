@@ -5,7 +5,7 @@ project: F15
 title: Alexandra
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
+drive_id: 1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE
 ---
 A possible Party member for Arjun. Like many of the Slayers, Alexandra was a child who at a young age had her parents killed by monsters - In her case, Vanators. As the case for most orphans in Aldorf, she was sent to the Slayer Academy, where she trained to become a defender of the people and a killer of monsters.
 

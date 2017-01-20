@@ -5,7 +5,7 @@ project: F15
 title: Aesthetic
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
+drive_id: 1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY
 ---
 The game is set in Victorian era and is steampunk, so there a TON of routes to go with the aesthetic. The colour palette can change accordingly to cities and forests (like cities can be dark greys and purples with the occasional splash of colour like Lorcia, or brown with bright rich colours like Bharata, or silver with blues and greens like Marvansk, or dark with reds and oranges for the Vanator colonies) with the forests having a natural palette with dark colours.
 

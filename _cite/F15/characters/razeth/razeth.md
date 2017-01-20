@@ -5,7 +5,7 @@ project: F15
 title: Razeth
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
+drive_id: 1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE
 ---
 Possible Party Companion for Mavrock. Razeth is the daughter of a Clan Leader in Marvansk, having been raised to understand the importance of human-Vanator alliances as she herself is the result of a human and a Vanator. Due to the recent rise in dislike for Vanators as well as tensions, she has been sent by the Clans to talk to Mavrock and attempt to solidify a workable alliance with him.
 

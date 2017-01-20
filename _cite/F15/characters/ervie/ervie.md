@@ -5,7 +5,7 @@ project: F15
 title: Ervie
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
+drive_id: 1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE
 ---
 The woman who was the nanny to Mavrock and didn’t go insane in the attempt. A very kindhearted woman, she raised Mavrock and has been a mother to him in every sense of the word. It’s thanks to her that he’s not entirely devoid of emotion or passion; she’s the sort of person who can find a humanizing emotion in even the most devious of people. Currently is the nanny to Mavrock’s younger sister Lilia.
 

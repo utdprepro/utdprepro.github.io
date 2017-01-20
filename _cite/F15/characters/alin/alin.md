@@ -5,7 +5,7 @@ project: F15
 title: Alin - Male, Vanator
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
+drive_id: 1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE
 ---
 A possible party member for Arjun. Hailing from a small Clan in Aldorf, his entire life he has spent defending his Clan from outside attacks and attempting to ensure its survival. With his Clan gone, the young Vanator is completely out of his element and searches for his Clan’s allies in the North.
 

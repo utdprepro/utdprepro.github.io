@@ -5,6 +5,5 @@ project: F15
 title: War Inventory Draft
 author: Jennifer Moravits
 media: Image
-source: https://drive.google.com/file/d/0Bxb_F9ToEshBV1JMd0tlclNRQlU/view?usp=sharing
+drive_id: 0Bxb_F9ToEshBV1JMd0tlclNRQlU
 ---
-![{{ page.title }}](/projects/F15/mechanics/inventory draft.png)

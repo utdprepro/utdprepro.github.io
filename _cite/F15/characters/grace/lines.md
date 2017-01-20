@@ -5,7 +5,7 @@ project: F15
 title: Lines
 author: Kenny Huynh
 media: Text
-source: https://docs.google.com/document/d/11U-3Mn2SCS6FAvNLAdIJDlb5NnwbFtcf_B_2OcyFdsU/edit?usp=sharing
+drive_id: 11U-3Mn2SCS6FAvNLAdIJDlb5NnwbFtcf_B_2OcyFdsU
 ---
 - I am Grace Vester, Commander of the Black Brigade of the Kingdom of Lorcia.
 

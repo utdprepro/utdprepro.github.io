@@ -5,21 +5,21 @@ project: F15
 title: Plot
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1YKiQrY3oUFUSypSIqW2m1cVwviPrbi664LfuOp4rWcQ/edit?usp=sharing
+drive_id: 1YKiQrY3oUFUSypSIqW2m1cVwviPrbi664LfuOp4rWcQ
 ---
-#### Tutorial
+###### Tutorial
 
 Arrives on Golden Wing and meets crew
 
 Sets off into sky, defeating a pirate ship(?) and learning character’s capabilities
 
-#### Primary Conflict
+###### Primary Conflict
 
 Lands at the Aldorf border and is presented with conflict between Slayers and Vanators.
 
 Arjun must make decision that determines path followed, side with Vanators (Alin) or side with Slayers(Alexandra)
 
-### Alin Path
+##### Alin Path
 
 Arjun sides with Vanators, saving a lone Vanator named Alin
 
@@ -29,7 +29,7 @@ Alin either chooses to willingly assist the Vanators or is forced to by his crew
 
 Arjun must return Alin to his allies in the North as the story progresses.
 
-#### Rising Action
+###### Rising Action
 
 Arjun travels northward through Aldorf, a religious state that hates Vanators and oppresses them.
 
@@ -85,7 +85,7 @@ Vladimirians are closing in, Lorcia stretched too far to help, therefore the Kin
 
     - Kill Everyone (Bad End)
 
-#### Climax
+###### Climax
 
 Make their way to Marvansk after killing multiple monsters, finding a place for the Vanators to live. However, Mavrock, king of the nation, must be convinced to let them live there so that they can be protected if Aldorf or the Vladimirians start hunting them down
 
@@ -97,7 +97,7 @@ Make their way to Marvansk after killing multiple monsters, finding a place for 
 
 Arjun meets Vanator Costine and thanks him, asks him to assist her in Bharata
 
-#### Falling Action
+###### Falling Action
 
 Arjun can either improve or worsen relations with other heroes, such as helping them destroy villains or help them achieve their goals
 
@@ -109,7 +109,7 @@ Arjun can either improve or worsen relations with other heroes, such as helping 
 
 - ect.
 
-#### Conclusion
+###### Conclusion
 
 Good: Arjun kept his company’s name strong, only killed with the best intentions. Seen as a hero to the Vanators, expanded his merchant reach to several nations, given free passage to Marvansk and Lorcia and a nobility title by Mavrock
 
@@ -117,7 +117,7 @@ Peaceful: Arjun kept the other heroes alive at the cost of expanding his company
 
 Bad: Often solved his problems with murder, established his company as an effective, but cutthroat merchant group, is feared across nations and even by the Vanators. Vester will wait for the day he crosses the line so she can kill him.
 
-### Alexandra Path
+##### Alexandra Path
 
 Arjun sides with the Slayers, saving a lone Vanator named Alexandra
 
@@ -127,7 +127,7 @@ Alin either chooses to willingly assist the Slayers or is forced to by his crew.
 
 Arjun must return Alexandra to her religious headquarters so she can make a report of the situation as the story progresses.
 
-#### Rising Action
+###### Rising Action
 
 As they travel westward they encounter Vanators/other problems affecting the people
 
@@ -161,7 +161,7 @@ Make it to HQ, Alexandra makes her report and is teamed up with Lorcia’s Black
 
 - Travel to Marvasnk to meet the 11th, are joined by Mavrock Krey and Costine to eliminate their common foe
 
-#### Climax
+###### Climax
 
 The party encounters the hated 11th Pierce and end him once and for all. Arjun can slaughter Costine as well to get a greater standing with the Slayers or spare her to try and ease tensions with the Vanators
 
@@ -171,7 +171,7 @@ The party encounters the hated 11th Pierce and end him once and for all. Arjun c
 
     - Destroy colonies of evil Vanators
 
-#### Falling Action
+###### Falling Action
 
 Arjun can either improve or worsen relations with other heroes, such as helping them destroy villains or help them achieve their goals
 
@@ -183,7 +183,7 @@ Arjun can either improve or worsen relations with other heroes, such as helping 
 
 - ect.
 
-#### Conclusion
+###### Conclusion
 
 Good: Arjun kept his company’s name strong, only killed with the best intentions. Seen as a hero to the people, expanded his merchant reach to several nations, and is made an honorary Slayer by Aldorf and is given a massive influence in Aldorf and Lorcia
 

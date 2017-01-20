@@ -5,15 +5,15 @@ project: S16
 title: Critical Path
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
+drive_id: 1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE
 ---
 The game is fairly linear, organized into a prologue, 4 chapters, and the epilogue. You are free to travel between the villages using warp portals within the villages at any time.
 
-### Prologue
+##### Prologue
 
 Cinematic, one controllable area where Val is at the Life-Death corridor, followed by another cinematic of her falling.
 
-### Chapter 1
+##### Chapter 1
 
 **Water Tribe** battle tutorials and intro to world; free period to do available quests; cutscene of the Trustee “reacquisitioning” the scientists followed by more time to do other quests; dungeon: Tidewater Labs and miniboss: The Trustee; resolution cutscene and travel to the next area
 
@@ -21,7 +21,7 @@ Cinematic, one controllable area where Val is at the Life-Death corridor, follow
 
 **Light Tribe** meeting Gobe; free period to do available quests; cutscene of Gobe disappearing followed by more time to do other quests; dungeon: Mirror Hall and boss: The Mayor; resolution cutscene and travel to the next area
 
-### Chapter 2
+##### Chapter 2
 
 **Fire Tribe** travel to village blocked, meet with rebels; free period to do available quests with the rebels; cutscene giving access to main village followed by more time to do other quests; dungeon: Mt. Pyrenis and miniboss: The General; resolution cutscene and travel to the next area
 
@@ -29,7 +29,7 @@ Cinematic, one controllable area where Val is at the Life-Death corridor, follow
 
 **Ice Tribe** getting run out of the village and meeting Fyord; free period to do available quests; cutscene followed by more time to do other quests; dungeon: Lynxkill Glacier and boss: The Judge; resolution cutscene and travel to the next area
 
-### Chapter 3
+##### Chapter 3
 
 **Earth Tribe** intro; free period to do available quest; cutscene followed by more time to do other quests; dungeon: Faultline Mines and miniboss: The Overseer; resolution cutscene and travel to the next area
 
@@ -37,7 +37,7 @@ Cinematic, one controllable area where Val is at the Life-Death corridor, follow
 
 **Air Tribe** intro; free period to do available quests; cutscene followed by more time to do other quests; dungeon: Fogflute Isles and boss: The Curator; resolution cutscene and travel to the next area
 
-### Chapter 4
+##### Chapter 4
 
 **Spirit and Metal Tribe** rebellion from all 9 tribes gather, Founders create barrier; free period to do quests for Argena; quest to take her to the grave of her beloved; dungeon: the Colonial Quarters and miniboss: The Prophet; break the barrier and proceed to the next area
 

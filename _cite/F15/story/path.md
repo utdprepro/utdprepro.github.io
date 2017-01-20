@@ -5,7 +5,7 @@ project: F15
 title: Critical Path
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
+drive_id: 1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY
 ---
 The game progression is pretty simple even though there are 4 characters since their paths are very similar. Basically they all start with the same beginning; a tutorial mission that allows them to learn the controls while also completing the task and setting off the events of gameplay. After completing this, the characters will receive tasks from certain other characters that allow for story progression, and the completion of each one allows for the next task to open, moving the story along. However, between tasks, the characters can take side quests, train, or simply explore the area while interacting with the characters within their country, for multiple purposes. Talking to people, depending on which character you’re playing and what the context is, can raise moral, help gain information, get side quests and raise your credibility (in the case of the merchant and the Vanator heroes).
 

@@ -5,7 +5,7 @@ project: F16
 title: God of Artisans
 author: [Ara Beara, Denzel Buenafe]
 media: Text
-source: https://docs.google.com/document/d/1Jc9_IHrk5a51byQFNHly_l1Uc-SGYF2A5hFCfIl0LJE/edit?usp=sharing
+drive_id: 1Jc9_IHrk5a51byQFNHly_l1Uc-SGYF2A5hFCfIl0LJE
 ---
 - The God of blacksmiths, cooks, carpenters, sculptors, artists, etc.
 

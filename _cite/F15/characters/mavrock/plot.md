@@ -5,9 +5,9 @@ project: F15
 title: Plot
 author: [Maria Neblett, Kenny Huynh]
 media: Text
-source: https://docs.google.com/document/d/1abFfYFc5uo71gUsy2EVlHjMWQq6rpHnLijMBk0--eas/edit?usp=sharing
+drive_id: 1abFfYFc5uo71gUsy2EVlHjMWQq6rpHnLijMBk0--eas
 ---
-#### Tutorial
+###### Tutorial
 
 Unpopular Poles: Get rid of councilman, persuade people to do things for you, and go fight stuff
 
@@ -17,11 +17,11 @@ Unpopular Poles: Get rid of councilman, persuade people to do things for you, an
 
 - (A suspicious sound) Go towards it (Hunting tutorial), find it, kill it
 
-#### Primary Conflict
+###### Primary Conflict
 
 While holding a meeting with all his ministers, a scream is heard throughout the castle - the scream of Mavrock’s younger sister, Katerina. Upon coming across her, they see a mutated Vanator wearing the armor of Hellion, about to strike down his sister. Killing him, Mavrock swears to destroy Hellion and find out who is responsible for this.
 
-#### Rising Action
+###### Rising Action
 
 During this time, Mavrock would be keeping the peace in his country while dealing with people coming to his country. During this time he has allies; the woman who raised him and watches over his younger sibling Ervie, and her nephew Thomas (romanceable ally) who grew up together with Mavrock, a rather good observer of the court and entertainer for the court.
 
@@ -69,7 +69,7 @@ Leading up to the climax:
 
 Mavrock and Grace discover similarities between the hideous monsters and some mutated vanator corpses lying around. Throughout examination, they come to realize that no human in the world (as they know) has any access to these kinds of genetic medications. They conclude that a vanator might’ve been capable of manipulating their genes to the point they could transfer it somehow (genetic anthropomorphism, new - birth (stem) genes being passed on, highly unorthodox experiments in general). They suspect, judging from the large, oddly - shaped footprints, that the vanator responsible for this must be nearby, so they go searching for it. Upon their search Costine appears.
 
-#### Climax
+###### Climax
 
 To the surprise of everyone, the 2nd Original Costine (Romanceable ally) has been improving relations between Vanators and humans in Marvansk, ending up in the court of the King. She brings heavy news of who their opponent is; Pierce, an exiled Vanator, who has taken over the minds of the Helyon country and used their technology to create an army of monsters. As such, they must ready for war.
 
@@ -95,7 +95,7 @@ To the surprise of everyone, the 2nd Original Costine (Romanceable ally) has bee
 
 - Upon her return, Helyon attacks and all 4 heroes face off against Pierce.
 
-#### Falling Action
+###### Falling Action
 
 Multiple missions to increase or worsen relations with other heroes and countries.
 
@@ -105,7 +105,7 @@ Multiple missions to increase or worsen relations with other heroes and countrie
 
 - Fight off Vladimirians/Hunt down the mutated monsters in Marvansk
 
-#### Conclusion
+###### Conclusion
 
 Good ending: All his political opponents are knowingly or unknowingly under his sway, 1 or less heroes are dead, his country stands proud. They have gained the land of Helyon.
 

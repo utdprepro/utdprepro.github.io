@@ -5,13 +5,13 @@ project: S16
 title: Plot
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/document/d/1K4H1369GSCRFLteF23n1rjDf_tke8aqb4F7cfBas3RI/edit?usp=sharing
+drive_id: 1K4H1369GSCRFLteF23n1rjDf_tke8aqb4F7cfBas3RI
 ---
-### Prologue
+##### Prologue
 
 Val and her mother are aboard an airplane, flying over an ocean. Suddenly, things get turbulent, and the plane quickly loses altitude. As the plane plunges into the ocean, everything blacks out. Val wakes up at a corridor with two mirrors beside her, one of the plane wreckage in the sea and another of a glimpse of heaven. Scared and worried for her mother, she instead turns her back and wanders into the darkness, eventually stumbling into a pit where she fall from an immense height down into Limbo, plunging into the sea and blacking out.
 
-### Chapter 1
+##### Chapter 1
 
 After falling, Valerie wakes up on a beach with no clue of where she is. Finding no sign of her mother, she wanders around a beach until she encounters a hostile spirit. Ambar, a cranky old man, appears but instead of warding it off lets it fight Val. He instructs her on how to use Virtue to cast magic and how to win a battle against spirits. Ambar takes her to his hut where Pelas, an enthusiastic young boy, is setting up a meal for Val, having found her earlier and sending Ambar to check up on her while he prepared dinner. Ambar and Pelas both tell Val that she is now in Limbo and explain a little bit about the tribes and Virtues. When asked about her mother’s whereabouts, Pelas replies that he didn’t see anyone with her on the beach, causing her to panic and cry out for home. The boy suggests that perhaps she could accompany him back to the Water Village to meet with his parents who might know of a way to find her and get out.
 
@@ -25,7 +25,7 @@ Amazed at the tribe’s liberation, Ambar urges Val to free the other tribes on 
 
 Past the marsh and through the mountains lies the desert of the Light Tribe, where the people seem  to be living an ideal life free of any Founder influence, which strikes Ambar as odd. Upon asking the villagers, it appears as if they have no idea of who the Founders are or what they have done to the other tribes, instead remaining clueless of the outside world and denying that bad things are happening. Ambar and Val soon find that the villagers have been kept in isolation under the seemingly paternal governance of the Mayor. However, the Mayor has in fact brainwashed a great number of the tribesmen so that the disappearance of their children and goods goes unnoticed as they are smuggled off into far away lands. By making contact with the last remaining unbrainwashed villagers, they are able to reveal the Mayor as the corrupt man he is. Angered by this, the Mayor reveals a strange device attached to his arm. Upon activating it, an Ignorance, Deceit, and Envy spirit appear and appear to fuse with him, transforming him into a grotesque watery, angelic, and demonic creature that Val must defeat in combat. Fearful of what this could mean for the Islanders’ future, Ambar urges Val to continue to the lands of the Fire Tribe, where defeating the Founders may lead to an island-wide revolt.
 
-### Chapter 2
+##### Chapter 2
 
 The Fire Tribe should have been willing to help, with the majority of the tribe being proud warriors. Instead, Val and Ambar are blocked off from reaching the village at every turn by the local militia. The soldiers have been enlisted by the Founders to guard the region against a rumored uprising while the Resistance led by Etanoli has been leading guerilla attacks. However, the Founders have been planning on the rebels’ attacks on finishing the tribe off once and for all- Val must quench the rebels’ wrath and break the General’s hold on the region.
 
@@ -33,7 +33,7 @@ Unlike the resentful Fire Tribe, the Nature Tribe instead decided to live in pea
 
 The Ice Tribe is by and large a proud people bound by honor and the desire to be right, a trait that was noticed by the Founders. The tribe was then tricked into being indebted to the Founders with a deal that they could not fulfill. The tribesmen must provide enough resources as tribute, but it is sabotaged annually and thus they are unable to fulfill the requests of the Founders. Val must either stop the sabotage from occurring or convince the tribe to give their pride and honor code for the sake of their survival. Upon doing so, the Judge will attack the player, fusing with Fear, Wrath, and Malice spirits.
 
-### Chapter 3
+##### Chapter 3
 
 Everyone is smiling in the subterranean world of the Earth tribe. They all look so cheerful working themselves to the bone in the mines that Anbar and Val do not notice them starving at first. Despite the cheery attitude in public, the Earth tribesmen of the lower classes are miserable as the Founders used the custom of lending a hand no matter what to heighten the already-present class inequality. While the rich are free to spend extravagantly on luxury goods and donate occasionally to the local charity, the poor are so embroiled in their own financial woes that they are spending more time working in the mines to pay off their generous lifestyle.  Defeating the Overseer will free the poor and restore balance.
 
@@ -41,7 +41,7 @@ The Thunder Tribe, for the most part, no longer identify themselves as such exce
 
 The village of the Air Tribe, set atop the Cloud Mountains, appears to be thriving in spite of the presence of Founder soldiers with the various art guilds showcasing their talents throughout. Despite this, the artists themselves are clearly in trouble: the guilds have been manipulated into an envious rivalry against one another where sabotage and conflict run rampant. The Gallery Show is coming up, where each guild will be judged based on their work and the Curator will choose who gets the Founders’ patronage for the upcoming year- that is, who will be supplied this year with food, money, and other necessities, and who will starve. Val must break the jealous rivalry between the factions and get them to work together instead. In restoring balance to the Air Tribe, the Curator fuses with Greed, Sloth, and Deceit spirits.
 
-### Chapter 4
+##### Chapter 4
 
 The rebellion culminates in the surrounding of the Founders’ lands in the center of the Island, once the Capital. However, a barrier has been set up in the plains, inaccessible to all but Founders and Metal Tribesmen. The plains are barren, with a few Founders’ forts dotting the area thanks to the Spirit Tribe genocide and the betrayal of the Metal Tribe. Val meets the last unassimilated Metal Tribe member and must help her walk through the regrets of her past in order to break into the Capital. The miniboss, the Prophet talks of salvation for the Founders in the creation of new and brighter empire in a world far off, unsettling the heroes.
 
@@ -49,7 +49,7 @@ With the rebellion at its closest, Ambar is worried of the Founders’ progress 
 
 With the final dungeon, Val must go alone in fighting through waves after waves of spirits in the Imperial Palace. There she faces off against the one who started it all: the Founder Emperor, His Imperial Majesty Tredecimus Vitiae. In building a portal to Earth, the magic of Limbo renders their technology useless; however, since spirits are inherently magical, the Emperor starts the fusion project so that supersoldiers can make takeover of Earth simple. He then fuses with 13 hostile spirits of all the vices and morphs into a hideous monster blocking the way of the portal. After his defeat, the Founders all flee, but the portal is finished charging with only one possible use. Val must decide whether to return or stay, and then the epilogue happens.
 
-### Epilogue
+##### Epilogue
 
 Depending on how many of the hostile spirits you defeat (there is a set number per area) and which choices you make in the final chapter, the epilogue can come out differently.
 

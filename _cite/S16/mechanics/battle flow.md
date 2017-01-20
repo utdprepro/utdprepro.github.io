@@ -5,13 +5,13 @@ project: S16
 title: Battle Flow
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/document/d/101qLLBcaPJFMcJ-C01EjrZeE2x5IZrrZjkhVExoGkTU/edit?usp=sharing
+drive_id: 101qLLBcaPJFMcJ-C01EjrZeE2x5IZrrZjkhVExoGkTU
 ---
-### Initiation
+##### Initiation
 
 Initiative determined by AGI stat; a graphic showing turn order appears on top, also determined by AGI
 
-### Player Turn
+##### Player Turn
 
 Choose between Act(Offensive Skills), Tactic(defend for a turn, flee), Meditate(Heal, Defensive Skills, Stat Changing), or Item.
 
@@ -19,7 +19,7 @@ Choose between Act(Offensive Skills), Tactic(defend for a turn, flee), Meditate(
 
 - **If Act hits Enemy** Enemy has short moment (half a second or less) following attack hit to react; if reaction is true, then damage dealt with be lessened or status effects are less likely to occur, or some counterattack will be done to the player
 
-### If Enemy Turn
+##### If Enemy Turn
 
 No enemies have an Item, so will choose either Act, Tactic, or Meditate.
 
@@ -29,6 +29,6 @@ No enemies have an Item, so will choose either Act, Tactic, or Meditate.
 
 - **If Act hits Player** Player has short moment (half a second or less, can be increased with AGI stat) to react, visual or auditory cue will be given; if timed right, reaction where damage dealt will be lessened, lower chance of negative status effects occurring, or Val deals a counterattack
 
-### End
+##### End
 
 Battle ends when either the player has run out of HP, the enemy has run out of HP, or either Val or the enemy flees.

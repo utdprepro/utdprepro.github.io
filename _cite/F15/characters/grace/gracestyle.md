@@ -5,6 +5,5 @@ project: F15
 title: Stylized Grace Vester
 author: Meagan Young
 media: Image
-source: https://drive.google.com/file/d/0B-1iHvrQa5F_NXV2QmZWS1pkNU0/view?usp=sharing
+drive_id: 0B-1iHvrQa5F_NXV2QmZWS1pkNU0
 ---
-![{{ page.title }}](/projects/F15/characters/grace/gracestyle.jpg)

@@ -3,8 +3,7 @@ layout: cite
 page: Mechanics
 project: F15
 title: Inventory UI
-author: Miso Bellaouar
+author: Jennifer Moravits
 media: Image
-source: https://drive.google.com/file/d/0B8iPPxLlFuf1MzhyRVNnaDFKX2M/view?usp=sharing
+drive_id: 0B8iPPxLlFuf1MzhyRVNnaDFKX2M
 ---
-![{{ page.title }}](/projects/F15/mechanics/inventoryui.png)

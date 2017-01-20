@@ -5,9 +5,9 @@ project: F16
 title: Ash'ra
 author: [Ara Beara, Denzel Buenafe, Aven Blue]
 media: Text
-source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637guedU4M/edit?usp=sharing
+drive_id: 1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637guedU4M
 ---
-### Personality
+##### Personality
 
 - Avoids people due to isolation in early life
 - Possible culture shock and lack of strong social skills
@@ -17,7 +17,7 @@ source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637
 - Subtle nativities and looks to others for actions and what to do 
 - Tries to one up others problems leading to her correcting her views and sympathizing
 
-### Background
+##### Background
 
 - Adopted as orphan so feels estranged (orphaned as a baby)
 - On spirit walk retreat and no answer so return and everyone's dead
@@ -31,18 +31,18 @@ source: https://docs.google.com/document/d/1BoETvKQYhqOHhRaphn2zGXRumHqdzQ4KF637
 - Possibly dream of corruption and hurting others
 - Makes own hammock or tent to sleep and cue dream cutscenes
 
-### Motives
+##### Motives
 
 - Called to action by Pad’ua
 - Resents lack of original connection to god/ wants revenge slightly 
 
-### Likes
+##### Likes
 
 - Tea, thats what she gifts(likes it due to tea ceremony)
 - When sleeping and resting the teapot is next to it
 - Idle time she fiddles and makes characters she could control occasionaly
 
-### Fears
+##### Fears
 
 - Scared of strangers and the new world but grows to accept
 - Lack of self confidence in spirituality leading to hesitance (because retreat to look for signs and meditate)

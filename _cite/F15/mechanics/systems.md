@@ -5,9 +5,9 @@ project: F15
 title: Systems
 author: [Caleb Pond, Aamir Syed, Ed Stevenson, Tomer Braff]
 media: Text
-source: https://docs.google.com/document/d/1GjwVWnLeDUU-r5PCRACQ6vopf6BhAnov4TLLJ_v56yo/edit?usp=sharing
+drive_id: 1GjwVWnLeDUU-r5PCRACQ6vopf6BhAnov4TLLJ_v56yo
 ---
-### Overarching Systems
+##### Overarching Systems
 Travel
 
 - Open world
@@ -52,7 +52,7 @@ Inventory/Loot
 
 - Accessed via menu (not list)
 
-### Combat
+##### Combat
 
 Player vs. Enemy AI
 
@@ -124,13 +124,13 @@ Base Stats
 
             - Allow access to more mechanistic weapons
 
-### Quest
+##### Quest
 
 Time-limited
 
 - Quests are the main determining factor for ending
 
-### Individual Character Systems
+##### Individual Character Systems
 
 Different Status bar per character
 

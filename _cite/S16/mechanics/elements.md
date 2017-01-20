@@ -5,7 +5,7 @@ project: S16
 title: Virtues, Vices, and Elements
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/spreadsheets/d/1Oe--SIV2kEzTAoMQyPVKFTOM50yAfT666zT8tUOI0qg/edit?usp=sharing
+drive_id: 1Oe--SIV2kEzTAoMQyPVKFTOM50yAfT666zT8tUOI0qg
 ---
 Element      | Virtue        | Opposing Vice | Vice Cause by the Focus on One Virtue
 ------------ | ------------- | ------------- | -------------------------------------

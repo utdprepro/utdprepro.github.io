@@ -5,7 +5,7 @@ project: F15
 title: Controls
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
+drive_id: 1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY
 ---
 The control scheme is basically this:
 

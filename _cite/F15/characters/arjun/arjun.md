@@ -5,7 +5,7 @@ project: F15
 title: Arjun Parkash, the Traveler from Bharata
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY/edit?usp=sharing
+drive_id: 1fufTIYoM4XEt7lAJo0Dx-NaxsgS-ZYNdUuGJaNDWrlY
 ---
 The youngest playable character, Arjun is the son of a very wealthy merchant who has finally been given the opportunity to travel the world and trade for the first time in the aircraft, the Golden Wing. Bharata is based off of India, so he himself wears clothing that is similar to that culture while also employing several steampunk elements. His clothing are the most colourful and it shows that he’s a very bright, young person ready to see the world for the first time. As a Bharatan citizen, he’s never really had the chance to see how politics outside of his country work, as his country has been at peace for decades more or less and is considered to be a very stable area, so he’s going to be thrown in there and have to figure out how or what to do in this new environment.
 

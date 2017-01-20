@@ -5,7 +5,7 @@ project: F15
 title: Leonius Warpolt
 author: Maria Neblett
 media: Text
-source: https://docs.google.com/document/d/1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE/edit?usp=sharing
+drive_id: 1NMVMtZvW4wWAQiEWsEbz5JTrPyHgKU9KS8RNLc1lGoE
 ---
 Possible Party Member for Grace. The King of Lorcia, he is a young king; he only became King a little before Grace graduated from the military Academy, so he’s rather young. Yet he is aware of how young he is, and is the sort of person to surround himself with people he knows can cover him in areas that he doesn’t know much about. He is rather wise for his age, and knows what he’s doing, but he is constantly having to worry about his country not being crushed by the surrounding empires.
 

@@ -3,7 +3,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title/
-filters: [Text, Image, Model, Interactive, Other]
+filters: [Text, Image, Model, Interactive, File, Other]
 collections:
     cite:
         output: true

@@ -5,6 +5,5 @@ project: F15
 title: Desert Warrior
 author: Andrew Ward
 media: Image
-source: https://drive.google.com/file/d/0ByR2oIno6jQAX3NpcGlIZUtwODA/view?usp=sharing
+drive_id: 0ByR2oIno6jQAX3NpcGlIZUtwODA
 ---
-![{{ page.title }}](/projects/F15/regions/bharata/desertwarrior.jpg)

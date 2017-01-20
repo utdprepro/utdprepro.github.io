@@ -5,6 +5,5 @@ project: S16
 title: Air Environment
 author: Meagan Young
 media: Image
-source: https://drive.google.com/file/d/0B-1iHvrQa5F_RS14WHdzeFF5UHc/view?usp=sharing
+drive_id: 0B-1iHvrQa5F_RS14WHdzeFF5UHc
 ---
-![{{ page.title }}](/projects/S16/regions/air/AirEnvironment.png)

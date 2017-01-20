@@ -5,7 +5,7 @@ project: S15
 title: Color Scheme
 author: Caleb Pond
 media: Text
-source: https://docs.google.com/document/d/1K0jyOt2yw5TN3EbX3Jum0LLR7Ap68jNkfAuySyu8B14/edit?usp=sharing
+drive_id: 1K0jyOt2yw5TN3EbX3Jum0LLR7Ap68jNkfAuySyu8B14
 ---
 [The Different Shades of Sand](http://adobe.ly/1FISLAe)
 

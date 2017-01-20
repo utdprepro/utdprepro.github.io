@@ -5,6 +5,5 @@ project: F15
 title: Marvana Cityscape
 author: Meagan Young
 media: Image
-source: https://drive.google.com/file/d/0B-1iHvrQa5F_bWJfaXVOaVk1eFE/view?usp=sharing
+drive_id: 0B-1iHvrQa5F_bWJfaXVOaVk1eFE
 ---
-![{{ page.title }}](/projects/F15/regions/marvana/cityscape.jpg)

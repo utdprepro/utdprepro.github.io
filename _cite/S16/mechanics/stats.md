@@ -5,7 +5,7 @@ project: S16
 title: Stats
 author: Denzel Buenafe
 media: Text
-source: https://docs.google.com/document/d/1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE/edit?usp=sharing
+drive_id: 1NrLEy-p1WEwz7Oq2DrMdD8hBAQFW9rioQyi4rslvMqE
 ---
 - **MES** mental stamina, your HP and how tired you are; if this hits zero, the battle is over
 

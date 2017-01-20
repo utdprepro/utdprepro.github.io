@@ -5,6 +5,5 @@ project: S16
 title: Limerick
 author: Denzel Buenafe
 media: Image
-source: https://drive.google.com/file/d/0B1jPqXZEyu3vN0V6RkhDNFZ5LXM/view?usp=sharing
+drive_id: 0B1jPqXZEyu3vN0V6RkhDNFZ5LXM
 ---
-![{{ page.title }}](/projects/S16/misc/limerick/Limerick.png)

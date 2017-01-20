@@ -5,9 +5,9 @@ project: F15
 title: Plot
 author: [Maria Neblett, Ray Ahmed]
 media: Text
-source: https://docs.google.com/document/d/1PDuRD7BV5in1vlr5BTXu5r-kileI96BJ8yjqYZmRDD0/edit?usp=sharing
+drive_id: 1PDuRD7BV5in1vlr5BTXu5r-kileI96BJ8yjqYZmRDD0
 ---
-#### Tutorial
+###### Tutorial
 
 Elimination mission: Kill corrupt politician
 
@@ -21,11 +21,11 @@ After assassination, go talk to the Minister of Finance about giving her and her
 
 - Mean response:
 
-#### Primary Conflict
+###### Primary Conflict
 
 The King of Lorcia, King Leonius Warpolt is concerned with the state of affairs between Marvansk and Hellion. Additionally, Aldorf is reporting more attacks from Vanators. He knows war is coming, and they must prepare.
 
-#### Rising Action
+###### Rising Action
 
 King Warpolt sends Grace and the Black Brigade (BB) to Bharata to escort Jarvis Jacobs, Minister of Foreign Affairs. Jacobs gets kidnapped before BB can escort. Grace can:
 
@@ -101,7 +101,7 @@ A so-called Vladimirian points out the the colony in Lorcia is leaving the count
 
 - Kill all of the Vladimirians and not care if someone is left behind (Bad)
 
-#### Climax
+###### Climax
 
 Grace heads north via airship and arrive in Marvansk after some smaller missions dealing with the monsters. Grace meets Costine as Arjun brings her back from Bharata. She reveals that their common enemy is Pierce (main villain) - an exiled Vanator who has taken control of Hellion for nefarious purposes. Now, missions are:
 
@@ -135,7 +135,7 @@ FINAL BATTLE:
 
 - Battle versus Hellion forces is won, Pierce defeated
 
-#### Falling Action
+###### Falling Action
 
 After the defeat of Pierce, Grace can:
 
@@ -143,7 +143,7 @@ After the defeat of Pierce, Grace can:
 
 - Strengthen military further and raise morale
 
-#### Conclusion
+###### Conclusion
 
 Good Ending: Morale is high, Brigade is maxed out, Vanators are supported, Marvansk and Lorcia are allies, and Grace gets a Medal of Valor from King Leonius and is revered and respected as a military hero, given a title from Bharata
 

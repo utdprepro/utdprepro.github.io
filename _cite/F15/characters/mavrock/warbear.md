@@ -5,6 +5,5 @@ project: F15
 title: War Bear
 author: Scott Hartan
 media: Image
-source: https://drive.google.com/file/d/0B-RQ5QqydIJQYVg0d3VoOVZENHc/view?usp=sharing
+drive_id: 0B-RQ5QqydIJQYVg0d3VoOVZENHc
 ---
-![{{ page.title }}](/projects/F15/characters/mavrock/warbear.png)

@@ -5,8 +5,7 @@
     <title>{{ page.title }}</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/markdown7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <meta charset="utf-8">
 </head>
@@ -17,93 +16,126 @@
     {% endif %}
 {% endfor %}
 
+{% assign sorted_cites = site.cite | where: "project", page.project %}
+
 <body>
-    <nav class="teal">
-        <div class="nav-wrapper">
-            <a class="brand-logo" href="\">PreProduction Collaborative</a>
-            <a href="#" data-activates="mobile-down" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="\about">about</a></li>
-                <li><a href="\projects">projects</a></li>
-                <li><a href="\contributors">contributors</a></li>
-            </ul>
-            <ul id="mobile-down" class="side-nav">
-                <li><a href="\about">about</a></li>
-                <li><a href="\projects">projects</a></li>
-                <li><a href="\contributors">contributors</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <div class="head">
-            <nav class="teal lighten-2" style="padding-left: unset;height: unset;">
-                <div class="nav-wrapper">
-                    <ul style="height: inherit;overflow-x: auto;padding-left: unset;">
-                        <li><a href="{{ project.url }}">{{ project.title }}</a></li>
-                        <li><a href="{{ project.url }}assets/">Assets</a></li>
-                        {% for tab in project.tabs %}
-                        {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
-                        {% for c in pages %}
-                        <li><a href="{{ c.url }}">{{ c.title }}</a></li>
-                        {% endfor %}
+    <header>
+        {% for tab in project.tabs %}
+            {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
+            {% for c in pages %}
+                {% if c.pages %}
+                    <ul id="dropdown_{{ c.title | slugify }}" class="dropdown-content">
+                        {% for card in c.pages %}
+                            <li><a href="{{ c.url }}{{ card | replace: "'",'' | slugify }}">{{ card }}</a></li>
                         {% endfor %}
                     </ul>
+                    <ul id="dropdown_mobile_{{ c.title | slugify }}" class="dropdown-content">
+                        {% for card in c.pages %}
+                            <li><a href="{{ c.url }}{{ card | replace: "'",'' | slugify }}">{{ card }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        <nav class="teal nav-extended" style="height: 100%">
+            <div class="nav-wrapper" style="padding: 0 1rem;">
+                <div class="col s12" style="display:inline;">
+                    <a href="\" class="breadcrumb">PreProduction Collaborative</a>
+                    <a href="{{ project.url }}" class="breadcrumb">{{ project.title }}</a>
+                    {% unless page.creative_lead %}
+                    <a href="{{ page.url }}" class="breadcrumb">{{ page.title }}</a>
+                    {% endunless %}
                 </div>
-            </nav>
-            <h1>{{ page.title }}</h1>
-        </div>
-
-        <div class="card">
-            <div class="card-content" style="text-align: center;">
-                {% for filter in site.filters %}
-                    <span style="display: inline-block;text-align: center;">
-                        {{ filter }}
-                        <br />
-                        <div class="switch">
-                            <label>
-                                <input type="checkbox" checked class="filter" id="{{ filter }}">
-                                <span class="lever"></span>
-                            </label>
-                        </div>
-                    </span>
-                {% endfor %}
+                <a href="#" data-activates="mobile-down" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    {% for tab in project.tabs %}
+                        {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
+                        {% for c in pages %}
+                            {% if c.pages %}
+                                <li><a class="dropdown-button" href="#!" data-activates="dropdown_{{ c.title | slugify }}">{{ c.title }}<i class="material-icons right">arrow_drop_down</i></a></li>
+                            {% else %}
+                                <li class="tab"><a href="{{ c.url }}">{{ c.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    <li class="tab"><a href="{{ project.url }}assets/">Assets</a></li>
+                </ul>
+                <ul id="mobile-down" class="side-nav">
+                    {% for tab in project.tabs %}
+                        {% assign pages = site.pages | where: "project", page.project | where: "page", "project" | where: "title", tab %}
+                        {% for c in pages %}
+                            {% if c.pages %}
+                                <li><a class="dropdown-button" href="#!" data-activates="dropdown_mobile_{{ c.title | slugify }}">{{ c.title }}<i class="material-icons right" style="height: inherit">arrow_drop_down</i></a></li>
+                            {% else %}
+                                <li class="tab"><a href="{{ c.url }}">{{ c.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    <li class="tab"><a href="{{ project.url }}assets/">Assets</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        {% assign sorted_cites = site.cite | where: "project", page.project %}
-        {% for c in sorted_cites %}
-            <div class="cite {{ c.media }}">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">{{ c.title }}</span>
-                        {{ c.content | markdownify }}
-                        <div class="tooltip">
-                            {{ c.title }} by {{ c.author | join: ", " }}<br />
-                            <a href="{{ c.url }}">permalink</a><span style="padding-right: 20px;"></span><a href="{{ c.source }}">source</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="container"><div class="row">
+
+        <div class="col s12 m12 l10">
+            {% for filter in site.filters %}
+                {% assign cites = sorted_cites | where: "media", filter %}
+                {% assign numcites = cites | size %}
+                {% if numcites > 0 %}
+                    <h3 id="{{ filter }}" class="section scrollspy">{{ filter }}</h3>
+                {% endif %}
+                {% for c in cites %}
+                    <div class="card">
+                        {% if c.media == "Image" %}
+                            <div class="card-image">
+                                <img src="https://docs.google.com/uc?id={{ c.drive_id }}">
+                            </div>
+                        {% else %}
+                            <div class="card-content">
+                                {{ c.content | markdownify }}
+                            </div>
+                        {% endif %}
+                        <div class="card-action">
+                            <a href="{{ c.url }}">{{ c.title }}</a>
+                            {% for author in c.author %}
+                            <a href="/contributors/{{ author }}">{{ author }}</a>
+                            {% endfor %}
                         </div>
                     </div>
-                </div>
+                {% endfor %}
+            {% endfor %}
+
+            <footer>
+                <ul>
+                    <li><a href="https://www.facebook.com/groups/680277955393461">facebook</a></li>
+                    <li><a href="https://drive.google.com/folderview?id=0BwqA-2Wy1dAldHFiZDM1aDFMZWs&usp=sharing">google drive</a></li>
+                    <li><a href="mailto:preproductioncollaborativeutd@gmail.com">email</a></li>
+                    <li><a href="/feed.xml">feed</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <div class="col hide-on-med-and-down l2">
+            <div class="toc-wrapper">
+              <ul class="section table-of-contents">
+                {% for filter in site.filters %}
+                    {% assign citesnum = sorted_cites | where: "media", filter | size %}
+                    {% if citesnum > 0 %}
+                    <li><a href="#{{ filter }}">{{ filter}}</a></li>
+                    {% endif %}
+                {% endfor %}
+              </ul>
             </div>
-        {% endfor %}
+        </div>
 
-        <footer>
-            <hr/>
-            <ul>
-                <li><a href="https://www.facebook.com/groups/680277955393461">facebook</a></li>
-                <li><a href="https://drive.google.com/folderview?id=0BwqA-2Wy1dAldHFiZDM1aDFMZWs&usp=sharing">google drive</a></li>
-                <li><a href="mailto:preproductioncollaborativeutd@gmail.com">email</a></li>
-                <li><a href="/feed.xml">feed</a></li>
-            </ul>
-        </footer>
-    </div>
+    </div></div>
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
-    <script src="/js/project.js" type="text/javascript"></script>
-    <script src="/js/contributor.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="/js/init.js" type="text/javascript"></script>
 </body>
 
