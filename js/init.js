@@ -35,7 +35,12 @@ var resize = function() {
 	}
 	$('.images').height(Math.max($('.images').height(), height));
 };
-window.onresize = resize;
+var width = $(window).width();
+window.onresize = function() {
+	if (width != $(window).width())
+		resize();
+	width = $(window).width();
+};
 $(".images img").load(function() {
   resize();
 });
