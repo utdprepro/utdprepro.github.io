@@ -1,0 +1,415 @@
+<html>
+<head>
+	<title>Genre Shaders</title>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/pixi.js/3.0.7/pixi.js"></script>
+	<script id="fragShader" type="shader-code">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2      resolution;
+		uniform float     time;
+		uniform float     alpha;
+		uniform vec2      speed;
+		uniform float     shift;
+
+
+		float rand(vec2 n) {
+			//This is just a compounded expression to simulate a random number based on a seed given as n
+			return fract(cos(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);
+		}
+
+		float noise(vec2 n) {
+			//Uses the rand function to generate noise
+			const vec2 d = vec2(0.0, 1.0);
+			vec2 b = floor(n), f = smoothstep(vec2(0.0), vec2(1.0), fract(n));
+			return mix(mix(rand(b), rand(b + d.yx), f.x), mix(rand(b + d.xy), rand(b + d.yy), f.x), f.y);
+		}
+
+		float fbm(vec2 n) {
+			//fbm stands for "Fractal Brownian Motion" https://en.wikipedia.org/wiki/Fractional_Brownian_motion
+			float total = 0.0, amplitude = 1.0;
+			for (int i = 0; i < 4; i++) {
+				total += noise(n) * amplitude;
+				n += n;
+				amplitude *= 0.5;
+			}
+			return total;
+		}
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+
+			//This is where our shader comes together
+			const vec3 c1 = vec3(126.0/255.0, 0.0/255.0, 0.0/255.0);
+			vec3 c2 = vec3(173.0/255.0, 0.0/255.0, cos(time / 10.)/2. + .5);
+			const vec3 c3 = vec3(0.2, 0.0, 0.0);
+			const vec3 c4 = vec3(164.0/255.0, 1.0/255.0, 214.4/255.0);
+			const vec3 c5 = vec3(0.1);
+			const vec3 c6 = vec3(0.9);
+
+			//This is how "packed" the smoke is in our area. Try changing 8.0 to 1.0, or something else
+			vec2 p = gl_FragCoord.xy * 8.0 / resolution.xx;
+			//The fbm function takes p as its seed (so each pixel looks different) and time (so it shifts over time)
+			float q = fbm(p - time * 0.1);
+			vec2 r = vec2(fbm(p + q + time * speed.x - p.x - p.y), fbm(p + q - time * speed.y));
+			vec3 c = mix(c1, c2, fbm(p + r)) + mix(c3, c4, r.x) - mix(c5, c6, r.y);
+			float grad = gl_FragCoord.y / resolution.y;
+			gl_FragColor = vec4(c * cos(shift * gl_FragCoord.y / resolution.y), 1.0);
+			gl_FragColor.xyz *= (1.0-grad) * texColor.rgb;
+		}
+	</script>
+	<script id="noire" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2 resolution;
+		uniform float time;
+
+		const float RADIUS = .85;
+		const float SOFTNESS = .6;
+		const float GRAYSCALE = .95;
+		const float NOISE = 16.0;
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+			
+			vec2 position = (gl_FragCoord.xy / resolution.xy) - .5;
+			float len = length(position);
+			float vignette = smoothstep(RADIUS, RADIUS-SOFTNESS, len);
+
+			vec4 scaledColor = texColor * vec4(0.3, 0.59, 0.11, 1.0) * vignette;
+			float luminance = scaledColor.r + scaledColor.g + scaledColor.b ;
+			texColor = mix(texColor, vec4(luminance, luminance, luminance, texColor.a), GRAYSCALE);
+
+			float x = (vTextureCoord.x + 4.0) * (vTextureCoord.y + 4.0) * (time * 10.0);
+			vec3 grain = vec3(mod((mod(x, 13.0) + 1.0) * (mod(x, 123.0) + 1.0), 0.01) - 0.005) * NOISE;
+
+			// This one is optional, it makes a small "tear" every now and then
+			if(mod(time, 1.0) > .980 && mod(vTextureCoord.y, 10.0) > 7.0) grain = vec3(-3.0, -3.0, -3.0);
+
+			texColor.rgb *= 1.0 - grain;
+
+			gl_FragColor = texColor;
+		}
+	</script>
+	<script id="fantasy" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+
+		const float BRIGHTNESS = .2;
+		const float CONTRAST = 1.3;
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+			
+			texColor.rgb = texColor.rgb + vec3(BRIGHTNESS);
+			texColor.rgb = (texColor.rgb - .5) * CONTRAST + .5;
+
+			gl_FragColor = texColor;
+		}
+	</script>
+	<script id="comic" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2 resolution;
+
+		const float ROWS = 100.;
+		const float COLS = 100.;
+		const float COLOR = .5;
+
+		float luminosity(vec4 col) {
+			return 0.3 * col.r + 0.59 * col.g + 0.11 * col.b;
+		}
+
+		vec2 getTileSize() {
+			float tw = resolution.x / ROWS;
+			float th = resolution.y / COLS;
+
+			th *= (resolution.x / resolution.y);
+
+			return vec2(tw, th);
+		}
+
+		// Returns tile coordinates between [0, 0] and [ROWS-1, COLS-1]
+		vec2 getCoord(vec2 coord) {
+			vec2 ts = getTileSize();
+
+			int row = int(floor(coord.x / ts.x));
+			int col = int(floor(coord.y / ts.y));
+
+			return vec2(row, col);
+		}
+
+		float sampleTile(vec2 coord) {
+			vec2 ts = getTileSize();
+
+			float dx = ts.x / 4.;
+			float dy = ts.y / 4.;
+
+			float startx = (coord.x * ts.x) + 0.5 * dx;
+			float starty = (coord.y * ts.y) + 0.5 * dy;
+
+			float sum = 0.;
+
+			for(int i = 0; i < 4; i++)
+			{
+				float x = startx + float(i) * dx;
+
+				for(int j = 0; j < 4; j++)
+				{
+					float y = starty + float(j) * dy;
+
+					vec2 coord = vec2(x, y) / resolution.xy;
+
+					vec4 col = texture2D(u_texture, coord);
+
+					float l = luminosity(col);
+
+					sum += l;
+				}
+			}
+
+			return sum / 16.;
+		}
+
+		vec4 tileCircle(vec2 tileCoord, vec2 windowCoord, float lum) {
+			// First, get center of circle for this tile
+			vec2 tileSize = getTileSize();
+			
+			vec2 tileStart = tileCoord * tileSize;
+			
+			vec2 circleCenter = tileStart + 0.5 * tileSize;
+			
+			//float circleRadius = length(tileSize) * (iResolution.y / iResolution.x) * 0.5;
+			float circleRadius = length(tileSize) * 0.3;
+			
+			circleRadius *= lum;
+			
+			float d = length(windowCoord - circleCenter);
+			
+			if (d < circleRadius) {
+				return vec4(1);
+			} else {
+				return vec4(0);
+			}
+		}
+
+		vec4 comicShader(vec2 coord) {
+			// Get tile coord
+			vec2 tileCoord = getCoord(coord);
+
+			// Sample colors from tile
+			float lum = sampleTile(tileCoord);
+			
+			return tileCircle(tileCoord, coord, lum);
+		}
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+			
+			texColor = comicShader(vTextureCoord * resolution) * texColor;
+
+			gl_FragColor = texColor;
+		}
+	</script>
+	<script id="western" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2 resolution;
+		uniform float time;
+
+		const float RADIUS = .85;
+		const float SOFTNESS = .6;
+		const vec3 SEPIA_COLOR = vec3(1.2, 1.0, 0.8);
+		const float SEPIA_MIX = .45;
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+			
+			vec2 position = (gl_FragCoord.xy / resolution.xy) - .5;
+			float len = length(position);
+			float vignette = smoothstep(RADIUS, RADIUS-SOFTNESS, len);
+
+			texColor *= vignette;
+
+			texColor.rgb = mix(texColor.rgb, SEPIA_COLOR, SEPIA_MIX);
+
+			gl_FragColor = texColor;
+		}
+	</script>
+	<script id="cartoon" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2 resolution;
+
+		const float kernelWidth = 3.;
+		const float kernelHeight = 3.;
+		const float kernelSize = kernelWidth * kernelHeight;
+
+		bool isEdgeFragment(vec2 fragCoord) {
+			float kernel[(int(kernelWidth * kernelHeight))];
+			kernel[0] = -1.;
+			kernel[1] = -1.;
+			kernel[2] = -1.;
+			kernel[3] = -1.;
+			kernel[4] =  8.;
+			kernel[5] = -1.;
+			kernel[6] = -1.;
+			kernel[7] = -1.;
+			kernel[8] = -1.;
+			
+			vec4 result = vec4(0.);
+			vec2 uv = vTextureCoord / resolution;
+			
+			for(float y = 0.; y < kernelHeight; ++y) {
+				for(float x = 0.; x < kernelWidth; ++x) {
+					result += texture2D(u_texture, vec2(uv.x + (float(int(x - kernelWidth / 2.)) / resolution.x), 
+														uv.y + (float(int(y - kernelHeight / 2.)) / resolution.y)))
+												   * kernel[int(x + (y * kernelWidth))];
+				}
+			}
+			
+			return ((length(result) > 0.2) ? true : false);
+		}
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+
+			if(!isEdgeFragment(vTextureCoord)) {
+				gl_FragColor = texColor;
+			} else {
+				gl_FragColor = vec4(0);
+		    }
+		}
+	</script>
+	<script> 
+		function resize() {
+			if (renderer && bg) {
+				width = window.innerWidth;
+				height = window.innerHeight;
+				renderer.resize(window.innerWidth, window.innerHeight);
+				bg.width = width;
+				bg.height = height;
+				noireShader.uniforms.resolution.value = { x: width, y: height };
+				//fantasyShader.uniforms.resolution.value = { x: width, y: height };
+				comicShader.uniforms.resolution.value = { x: width, y: height };
+				westernShader.uniforms.resolution.value = { x: width, y: height };
+				//cartoonShader.uniforms.resolution.value = { x: width, y: height };
+				exampleShader.uniforms.resolution.value = { x: width, y: height };
+			}
+		}
+		// Get the screen width and height
+		var width = window.innerWidth;
+		var height = window.innerHeight;
+		// Chooses either WebGL if supported or falls back to Canvas rendering
+		var renderer = new PIXI.autoDetectRenderer(width, height);
+		renderer.autoResize = true;
+		window.addEventListener("resize", resize);
+		// Add the render view object into the page
+		document.body.appendChild(renderer.view);
+
+		// The stage is the root container that will hold everything in our scene
+		var stage = new PIXI.Container();
+
+		// shaders
+		var Uniforms = function() {
+			var uniforms = {};
+			uniforms.resolution = { type: 'v2', value: { x: width, y: height}};
+			uniforms.alpha = { type: '1f', value: 1.0};
+			uniforms.shift = { type: '1f', value: 1.6};
+			uniforms.time = {type: '1f',value: 0};
+			uniforms.speed = {type: 'v2', value: {x: 0.7, y: 0.4}};
+			return uniforms;
+		};
+
+		var exampleShaderCode = document.getElementById( 'fragShader' ).innerHTML;
+		var exampleShader = new PIXI.AbstractFilter('',exampleShaderCode, Uniforms());
+		var noireShaderCode = document.getElementById( 'noire' ).innerHTML;
+		var noireShader = new PIXI.AbstractFilter('',noireShaderCode, Uniforms());
+		var fantasyShaderCode = document.getElementById( 'fantasy' ).innerHTML;
+		var fantasyShader = new PIXI.AbstractFilter('',fantasyShaderCode, Uniforms());
+		var comicShaderCode = document.getElementById( 'comic' ).innerHTML;
+		var comicShader = new PIXI.AbstractFilter('',comicShaderCode, Uniforms());
+		var westernShaderCode = document.getElementById( 'western' ).innerHTML;
+		var westernShader = new PIXI.AbstractFilter('',westernShaderCode, Uniforms());
+		var cartoonShaderCode = document.getElementById( 'cartoon' ).innerHTML;
+		var cartoonShader = new PIXI.AbstractFilter('',cartoonShaderCode, Uniforms());
+
+		var bg = PIXI.Sprite.fromImage("bg.png");
+		bg.width = width;
+		bg.height = height;
+		bg.filters = null;
+		stage.addChild(bg);
+
+		var FilterButton = function(text, filters, y) {
+			var button = new PIXI.Text(text, {fill: "#FFFFFF", stroke: "#1A237E", strokeThickness: "5"});
+			button.interactive = true;
+			button.click = function(mousedata) {
+				bg.filters = filters;
+			};
+			button.x = 5;
+			button.y = y;
+
+			var size = {x: button.width + 10, y: button.height};
+			var origin = {x: button.x - 5, y: button.y};
+			var textbg = new PIXI.Graphics();
+			textbg.beginFill(0xFFFFFF, 1);
+			textbg.drawRoundedRect(origin.x, origin.y, size.x, size.y, 20);
+			textbg.endFill();
+
+			//stage.addChild(textbg);
+			stage.addChild(button);
+			return button;
+		};
+
+		var standard = FilterButton("Standard", null, 5);		
+		var noire = FilterButton("Noire", [noireShader], 35);
+		//var fantasy = FilterButton("Fantasy", [fantasyShader], noire.x + noire.width + 10);
+		var comic = FilterButton("Comic", [comicShader], 65);
+		var western = FilterButton("Western", [westernShader], 95);
+		//var cartoon = FilterButton("Cartoon", [cartoonShader], 125);
+		var example = FilterButton("Fire", [exampleShader], 125);
+
+		animate();
+
+		var count = 0;
+
+		function animate() {
+			// start the timer for the next animation loop
+			requestAnimationFrame(animate);
+
+			count += 0.1;
+			noireShader.uniforms.time.value = count;
+			exampleShader.uniforms.time.value = count;
+
+			// this is the main render call that makes pixi draw your container and its children.
+			renderer.render(stage);
+		}
+	</script>
+</body>
+</html>

@@ -90,7 +90,7 @@
                 </div>
             {% endif %}
             <div class="card-action">
-                <a href="https://docs.google.com/file/d/{{ page.drive_id }}/edit?usp=sharing">source</a>
+                {% if page.media != "Interactive" %}<a href="https://docs.google.com/file/d/{{ page.drive_id }}/edit?usp=sharing">source</a>{% endif %}
                 {% for c in page.author %}
                 <a href="/contributors/{{ c }}">{{ c }}</a>
                 {% endfor %}
