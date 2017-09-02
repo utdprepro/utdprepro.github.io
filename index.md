@@ -51,6 +51,29 @@ Of course, this is all at your own leisure. We don't expect to have a finished p
 </div>
 </div>
 
+<div class="card">
+<div class="card-content" markdown="1">
+<span class="card-title">Club Information</span><br>
+PrePro has meetings every Friday from 4-7pm in room ATC 2.602. Snacks may be served. We also have the following special types of meetings:
+
+**Pitch Day**
+
+At the beginning of every semester we'll have a day where anyone can present their idea for the game the club will work on that semester! Here are some things to include in your pitch:
+
+- Basic Mechanics/Gameplay
+- Genre
+- Art direction/style
+- Story summary
+- Scope
+
+Ideally, these would be presented either a powerpoint or design document, the latter of which you can see an example of [here](https://docs.google.com/document/d/107fZhJi9IeexC_kS7h-lza4mn-7zUPgsJdleXpzwzA4/edit?usp=sharing). 
+
+**Game Days**
+
+Our club also has regular game days, which are days where instead of working we just have fun socializing and playing games. Everyone is encouraged to bring their controllers and board games for a casual night of socializing and fun!
+</div>
+</div>
+
 {% for post in site.posts %}
 <div class="card">
 <div class="card-content">

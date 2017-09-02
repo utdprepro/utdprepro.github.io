@@ -1,13 +1,13 @@
 ---
 layout: cite
-page: Pagination
+page: Genres
 project: S17
 title: Genre Filters
 author: Anthony Lawn
 media: Interactive
 ---
 <div class="interactive">
-<iframe src="/projects/S17/genres_iframe.html"></iframe>
+<iframe src="/projects/S17/genres/genres_iframe.html"></iframe>
 <a href="#" onclick="toggleFullScreen()" class="fullscreen_btn"><i class="material-icons">settings_overscan</i></a>
 </div>
 

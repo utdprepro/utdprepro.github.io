@@ -65,6 +65,15 @@ iframe {
     height: 400px;
 }
 
+.card ul {
+    padding-left: 1em !important;
+    list-style-type: unset !important;
+}
+
+.card ul li {
+    list-style-type: unset !important;
+}
+
 .head {
     background: #00B9D2;
     padding: 20px;
