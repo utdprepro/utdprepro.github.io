@@ -231,6 +231,28 @@
 			gl_FragColor = texColor;
 		}
 	</script>
+	<script id="anime" type="shader">
+		precision mediump float;
+
+		varying vec2 vTextureCoord;
+
+		uniform sampler2D u_texture;
+		uniform vec2 resolution;
+		uniform float time;
+
+		const float RADIUS = .85;
+		const float SOFTNESS = .6;
+		const vec3 SEPIA_COLOR = vec3(1.1, 1, .97);
+		const float SEPIA_MIX = .25;
+
+		void main() {
+			vec4 texColor = texture2D(u_texture, vTextureCoord);
+
+			texColor.rgb = mix(texColor.rgb, SEPIA_COLOR, SEPIA_MIX);
+
+			gl_FragColor = texColor;
+		}
+	</script>
 	<script id="western" type="shader">
 		precision mediump float;
 
@@ -355,6 +377,8 @@
 		var fantasyShader = new PIXI.AbstractFilter('',fantasyShaderCode, Uniforms());
 		var comicShaderCode = document.getElementById( 'comic' ).innerHTML;
 		var comicShader = new PIXI.AbstractFilter('',comicShaderCode, Uniforms());
+		var animeShaderCode = document.getElementById( 'anime' ).innerHTML;
+		var animeShader = new PIXI.AbstractFilter('',animeShaderCode, Uniforms());
 		var westernShaderCode = document.getElementById( 'western' ).innerHTML;
 		var westernShader = new PIXI.AbstractFilter('',westernShaderCode, Uniforms());
 		var cartoonShaderCode = document.getElementById( 'cartoon' ).innerHTML;
@@ -367,7 +391,7 @@
 		stage.addChild(bg);
 
 		var FilterButton = function(text, filters, y) {
-			var button = new PIXI.Text(text, {fill: "#FFFFFF", stroke: "#1A237E", strokeThickness: "5"});
+			var button = new PIXI.Text(text, {fill: "#FFFFFF", stroke: "#000000", strokeThickness: ".9"});
 			button.interactive = true;
 			button.click = function(mousedata) {
 				bg.filters = filters;
@@ -389,8 +413,9 @@
 
 		var standard = FilterButton("Standard", null, 5);		
 		var noire = FilterButton("Noire", [noireShader], 35);
-		//var fantasy = FilterButton("Fantasy", [fantasyShader], noire.x + noire.width + 10);
-		var comic = FilterButton("Comic", [comicShader], 65);
+		//var fantasy = FilterButton("Fantasy", [fantasyShader], 65);
+		//var comic = FilterButton("Comic", [comicShader], 65);
+		var anime = FilterButton("Anime", [animeShader], 65);
 		var western = FilterButton("Western", [westernShader], 95);
 		//var cartoon = FilterButton("Cartoon", [cartoonShader], 125);
 		var example = FilterButton("Fire", [exampleShader], 125);

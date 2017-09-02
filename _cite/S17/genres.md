@@ -10,3 +10,5 @@ media: Interactive
 <iframe src="/projects/S17/genres_iframe.html"></iframe>
 <a href="#" onclick="toggleFullScreen()" class="fullscreen_btn"><i class="material-icons">settings_overscan</i></a>
 </div>
+
+Credit to Meagan Young for the background image. 
